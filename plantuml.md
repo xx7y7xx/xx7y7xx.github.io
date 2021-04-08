@@ -20,8 +20,6 @@ chenyang@chenyang-pc:/tmp$ java -jar ~/Downloads/plantuml.jar sequenceDiagram.tx
 chenyang@chenyang-pc:/tmp$ eog sequenceDiagram.png
 ```
 
-<p>{% render_time page rendered at: %}</p>
-
 ## References
 
 - [http://plantuml.com/starting.html](http://plantuml.com/starting.html)
