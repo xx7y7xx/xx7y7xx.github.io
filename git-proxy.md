@@ -14,6 +14,8 @@ Proxy can be shadowsocks:
 
 ### Clone with SSH
 
+#### Method 1
+
 Modify `~/.ssh/config`
 
 ```
@@ -24,6 +26,17 @@ Host github.com
    # ProxyCommand socat - PROXY:127.0.0.1:%h:%p,proxyport=8080
    # Socks5 proxy
    # ProxyCommand nc -v -x 127.0.0.1:1080 %h %p
+```
+
+#### Method 2
+
+Modify `~/.gitconfig`
+
+```
+[http]
+  proxy = socks5://127.0.0.1:1080
+[https]
+  proxy = socks5://127.0.0.1:1080
 ```
 
 ## OS: Ubuntu
