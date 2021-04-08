@@ -42,7 +42,8 @@ http://10.10.71.101:8888/sscpub/sckmsg/billmsghistory?billid=000_709FDD96-FCB5-4
 
 ## UML
 
-{% plantuml %}
+plantuml-start
+
 Browser -> FileController: upload(imageFile)
 FileController --> Browser: {imageID}
 Browser -> Socket: sendMessage(imageID)
@@ -50,7 +51,8 @@ Browser -> Socket: sendMessage(imageID)
 Socket -> Browser: {imageID}
 Browser --> FileController: getImageURL(imageID)
 FileController -> Browser: {imageURL}
-{% endplantuml %}
+
+plantuml-end
 
 ## See also
 
