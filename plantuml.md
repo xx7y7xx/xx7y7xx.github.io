@@ -22,9 +22,11 @@ chenyang@chenyang-pc:/tmp$ eog sequenceDiagram.png
 
 ## demo
 
+```
 {% plantuml %}
 [First] - [Second]
 {% endplantuml %}
+```
 
 <p>{% render_time page rendered at: %}</p>
 
