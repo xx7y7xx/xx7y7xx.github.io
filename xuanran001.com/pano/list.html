@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>家装360全景效果图</title>
+  <style>
+  img {
+    height: 100px;
+    float: left;
+  }
+  </style>
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//olado.github.io/doT/doT.min.js"></script>
+  <!-- pano2vr lib -->
+  <script type="text/javascript" src="//xuanran001.com/libs/swf-js/swfobject.js"></script>
+  <script type="text/javascript" src="//xuanran001.com/libs/pano/pano2vr_player.js"></script>
+  <script type="text/javascript" src="//xuanran001.com/libs/pano/skin.js"></script>
+</head>
+<body>
+<div id="pano-list">
+  <ul></ul>
+</div>
+<script>
+function hereDoc(f) {
+  return f.toString().
+      replace(/^[^\/]+\/\*!?/, '').
+      replace(/\*\/[^\/]+$/, '');
+}
+
+function showWsf(domId,swf_file)
+{
+    var startNode=document.location.hash.substring(1);        
+    var flashvars = {};
+    var params = {};
+
+    if (startNode.length>0) {
+        flashvars.startnode=startNode;
+    }
+
+    // enable javascript interface
+    flashvars.externalinterface="1";
+    params.quality = "high";
+    params.bgcolor = "#ffffff";
+    // params.allowscriptaccess = "sameDomain";
+    params.allowScriptAccess = "always";
+    params.allowfullscreen = "true";
+    params.wmode = "transparent";
+    params.base=".";
+    var attributes = {};
+    attributes.id =domId;
+    attributes.name = domId;
+    attributes.align = "middle";
+    attributes.style = " background: url(http://xuanran001.com/sites/default/files/load.gif) 50% 50% no-repeat;";
+    swfobject.embedSWF(swf_file,domId, "480", "360","9.0.0", "expressInstall.swf",flashvars, params, attributes);
+}
+  
+(function() {
+  var xuanran001API = "http://www.xuanran001.com/api/pano/list.jsonp.html?callback=?";
+  $.getJSON( xuanran001API, {
+    key: "test"
+  })
+    .done(function( data ) {
+      var src = hereDoc(function() {/*!
+        {{~it.Result :value:index}}
+          {{ if ( index > 5 ) break; }}
+          <li>
+            作者：{{=value.author}}<br />
+            渲染时间：{{=value.details.renderTime}}<br />
+            <div id="{{=value.id}}"></div>
+          </li>
+        {{~}}
+      */});
+      var tmpl = doT.template(src);
+      $("#pano-list ul").append(tmpl(data));
+      
+      $.each(data.Result, function(key, value) {
+        if ( key > 5 ) return;
+        showWsf(value.id, "http://xuanran001.com/"+value.details.swf);
+      });
+    });
+})();
+</script>
+ 
+</body>
+</html>

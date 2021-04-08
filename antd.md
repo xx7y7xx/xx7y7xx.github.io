@@ -1,0 +1,40 @@
+---
+layout: page
+title: antd ant design
+---
+
+## Form
+
+坑
+
+当Form跟Form.Item之间存在Redux的Connect()的时候，Checkbox不能被check
+
+```
+CreateForm
+`-- Form
+    `-- Connect(Permissions)
+        `-- FormItem
+            `-- Checkbox
+```
+
+TODO demo [https://github.com/xxd3vin/antd-form-demos](https://github.com/xxd3vin/antd-form-demos)
+
+## Select
+
+In `mode` prop, what is the difference between `multiple` and `tags`
+
+For `multiple`, when you input text in text box and the result is empty, there will be 'Not found' in the dropdown.
+
+For `tags`, when you input text in text box and the result is empty, for example, you input `zzzz`, there will be 'zzzz' in the dropdown, and you click on the `zzzz` dropdown item, will create a new tag in the text box.
+
+## ref
+
+If you want to get ref after `Form.create`, you could use `wrappedComponentRef` provided by `rc-form`:
+
+```
+<UserForm
+  wrappedComponentRef={form => (this.form = form)}
+  id={1}
+  onSubmit={this.handleSubmit}
+/>
+```

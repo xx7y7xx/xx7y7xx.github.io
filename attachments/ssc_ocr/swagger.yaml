@@ -1,0 +1,128 @@
+# this is an example of the Uber API
+# as a demonstration of an API spec in YAML
+swagger: '2.0'
+info:
+  title: SSC OCR API
+  description: Move your app forward with the SSC OCR API
+  version: "1.0.0"
+# the domain of the service
+host: 101.200.74.182
+# array of all schemes that your API supports
+schemes:
+  - http
+# will be prefixed to all paths
+#basePath: /v1
+produces:
+  - application/json
+paths:
+  /upload:
+    get:
+      summary: 上传发票并进行OCR处理
+      description: |
+        上传发票图片到服务器上，服务器进行OCR处理，
+        然后将处理结果以JSON形式返回客户端
+      parameters:
+        - name: photos
+          in: formData
+          description: 发票图片
+          required: true
+          type: file
+      responses:
+        200:
+          description: 处理结果
+          schema:
+            $ref: '#/definitions/Response'
+        default:
+          description: 尚未支持错误处理
+          schema:
+            $ref: '#/definitions/Error'
+definitions:
+  Response:
+    type: object
+    properties:
+      success:
+        type: boolean
+      message:
+        type: string
+      files:
+        type: array
+        items:
+          $ref: '#/definitions/File'
+      result:
+        $ref: '#/definitions/OCRResult'
+  File:
+    type: object
+    properties:
+      path:
+        type: string
+        description: 文件路径，用于下载已经上传到服务器上的图片文件
+  OCRResult:
+    type: object
+    properties:
+      buyer:
+        type: array
+        description: 购买方区域，比如“购买方名称”
+        items:
+          $ref: '#/definitions/OCRField'
+      details:
+        type: array
+        description: 详情区域
+        items:
+          type: array
+          description: 详情每一行
+          items:
+            $ref: '#/definitions/OCRField'
+      info:
+        type: array
+        description: 信息区域，比如“备注”或者“开票人”
+        items:
+          $ref: '#/definitions/OCRField'
+      passwd:
+        type: array
+        description: 密码区域，比如“发票密码”
+        items:
+          $ref: '#/definitions/OCRField'
+      seller:
+        type: array
+        description: 销售方区域，比如“销售方名称”
+        items:
+          $ref: '#/definitions/OCRField'
+  OCRField:
+    type: object
+    description: |
+      描述了在发票上识别出来的一个字段，比如“收款人”
+    properties:
+      description:
+        type: string
+        description: 识别出来的字段名称
+      h:
+        type: number
+        format: int
+        description: 在发票上，识别出来的字段的高度
+      item:
+        type: string
+      value:
+        type: string
+      w:
+        type: number
+        format: int
+        description: 在发票上，识别出来的字段的宽度
+      x:
+        type: number
+        format: int
+        description: 在发票上，识别出来的字段的左上角的坐标x
+      y:
+        type: number
+        format: int
+        description: 在发票上，识别出来的字段的左上角的坐标y
+
+  Error:
+    type: object
+    properties:
+      code:
+        type: integer
+        format: int32
+      message:
+        type: string
+      fields:
+        type: string

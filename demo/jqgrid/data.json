@@ -1,0 +1,62 @@
+{
+  "rows": [
+    {
+      "priority": "2",
+      "id": "job201506181706152664671",
+      "_name": "job201506181706152664671",
+      "jcr:created": "2015-06-18 17:06:15",
+      "_uuid": "9649125a-6657-497c-8445-8e28653c5f99",
+      "sling:resourceType": "job",
+      "jcr:primaryType": "sling:Folder",
+      "jcr:createdBy": "admin",
+      "owner": "tiansong@spolo.org"
+    },
+    {
+      "priority": "2",
+      "id": "job201506191425537310832",
+      "_name": "job201506191425537310832",
+      "jcr:created": "2015-06-19 14:25:53",
+      "_uuid": "98020c76-5f7e-4cb2-b85a-941602abf909",
+      "sling:resourceType": "job",
+      "jcr:primaryType": "sling:Folder",
+      "jcr:createdBy": "admin",
+      "owner": "qinwen@yifengtech.com"
+    },
+    {
+      "priority": "2",
+      "id": "job201506191845594254643",
+      "_name": "job201506191845594254643",
+      "jcr:created": "2015-06-19 18:45:59",
+      "_uuid": "69364aa2-8e93-4e35-815e-a071b642e5bf",
+      "sling:resourceType": "job",
+      "jcr:primaryType": "sling:Folder",
+      "jcr:createdBy": "admin",
+      "owner": "zhangxue@spolo.org"
+    },
+    {
+      "priority": "2",
+      "id": "job201506191936288425192",
+      "_name": "job201506191936288425192",
+      "jcr:created": "2015-06-19 19:36:28",
+      "_uuid": "4125c11a-b63e-4ce8-b9ed-5e076c0d8bbe",
+      "sling:resourceType": "job",
+      "jcr:primaryType": "sling:Folder",
+      "jcr:createdBy": "admin",
+      "owner": "zhangxue@spolo.org"
+    },
+    {
+      "priority": "2",
+      "id": "job201506191949433766268",
+      "_name": "job201506191949433766268",
+      "jcr:created": "2015-06-19 19:49:43",
+      "_uuid": "a912b151-045f-4457-91d7-b54807320563",
+      "sling:resourceType": "job",
+      "jcr:primaryType": "sling:Folder",
+      "jcr:createdBy": "admin",
+      "owner": "zhangxue@spolo.org"
+    }
+  ],
+  "total": 0.000022377000022377,
+  "Success": true,
+  "records": 22377
+}

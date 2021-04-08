@@ -1,0 +1,47 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: personal notes
+#email: your-email@domain.com
+description: > # this means to ignore newlines until "baseurl:"
+  Full Stack Engineer at Grab
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://xxd3vin.github.io" # the base hostname & protocol for your site
+#twitter_username: jekyllrb
+github_username: xxd3vin
+
+# Build settings
+# Github Recommended Settings
+markdown: kramdown
+
+# Blog Settings
+#lang: en
+#domain: xxd3vin.github.io
+#title: xxd3vin
+#tagline: ':(){:|:&amp;};:'
+
+# Use Gemfile to manage gems.
+#gems:
+#- jekyll-sitemap
+#- jekyll-plantuml
+
+#plugins_dir:  ./_plugins
+
+#defaults:
+#  -
+#    scope:
+#      path: "" # an empty string here means all files in the project
+#      type: "pages"
+#    values:
+#      layout: "page"
+
+exclude: ["Gemfile.lock", "Gemfile"]
+
+keep_files: ["README.md"]
+
+include: ["_pages"]

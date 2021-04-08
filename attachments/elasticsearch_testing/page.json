@@ -1,0 +1,40 @@
+{
+    "query": {
+        "filtered": {
+            "query": {
+                "match_all": {}
+            },
+            "filter": {
+                "bool": {
+                    "must": [
+                        {
+                            "term": {
+                                "pageId": "${__eval(${PAGE_ID})}"
+                            }
+                        },
+                        {
+                            "terms": {
+                                "geoCode": ["${__eval(${GEO_CODE})}","all"]
+                            }
+                        },
+                        {
+                            "range": {
+                                "pubDate": {
+                                  "le": "${__eval(${PUB_DATE})}"
+                                }
+                            }
+                        },
+                        {
+                            "range": {
+                              "expDate": {
+                                  "gt": "${__eval(${PUB_DATE})}"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    
+    }
+}

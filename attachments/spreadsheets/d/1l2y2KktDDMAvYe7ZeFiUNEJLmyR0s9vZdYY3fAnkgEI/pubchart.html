@@ -1,0 +1,20 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"><html><head><script type="text/javascript" src="jsapi.js"></script>
+<link href="2370586611-ritz_chart_css_ltr.css" rel="stylesheet" type="text/css"></head>
+<body style="padding:0;margin:0"><div id="c" style="width:600px;height:371px;overflow:hidden;"></div><script type="text/javascript" src="980189400-ritz_corechart_full.js"></script><script type="text/javascript" src="ritz_charts_linked.nocache.js"></script><script type="text/javascript">function drawChart() {
+var j = new google.visualization.ChartWrapper({"view":{"columns":[0,1,2,{"calc":"stringify","type":"string","properties":{"role":"annotation"},"sourceColumn":2},3]},"chartName":"Chart 1","dataTable":{"rows":[{"c":[{"v":"2000x1000"},{"v":1.53,"f":"1.53"},{"v":1.57,"f":"1.57"},{"v":1.32,"f":"1.32"}]},{"c":[{"v":"2500x1250"},{"v":1.08,"f":"1.08"},{"v":1.93,"f":"1.93"},{"v":1.62,"f":"1.62"}]},{"c":[{"v":"3000x1500"},{"v":2.47,"f":"2.47"},{"v":3.45,"f":"3.45"},{"v":2.6,"f":"2.60"}]},{"c":[{"v":"3500x1750"},{"v":3.85,"f":"3.85"},{"v":4.2,"f":"4.20"},{"v":3.68,"f":"3.68"}]},{"c":[{"v":"4000x2000"},{"v":4.93,"f":"4.93"},{"v":5.75,"f":"5.75"},{"v":4.12,"f":"4.12"}]},{"c":[{"v":"4500x2250"},{"v":0,"f":"0.00"},{"v":8.53,"f":"8.53"},{"v":2.48,"f":"2.48"}]},{"c":[{"v":"5000x2500"},{"v":8,"f":"8.00"},{"v":10.93,"f":"10.93"},{"v":6.42,"f":"6.42"}]}],"cols":[{"id":"A","label":"分辨率","type":"string"},{"pattern":"#,##0.00","id":"B","label":"场景1","type":"number"},{"pattern":"#,##0.00","id":"C","label":"场景2","type":"number"},{"pattern":"#,##0.00","id":"D","label":"场景3","type":"number"}]},"options":{"hasHiddenData":false,"treatLabelsAsText":true,"vAxes":[{"useFormatFromData":true,"minValue":null,"maxValue":null,"viewWindowMode":null,"title":"渲染结果（分辨率）","viewWindow":null},{"useFormatFromData":true,"minValue":null,"maxValue":null,"viewWindow":{"min":null,"max":null}}],"legend":"right","isStacked":false,"tooltip":{},"legacyScatterChartLabels":true,"title":"三个场景在不同分辨率下的耗时","titleTextStyle":{"color":"#000","fontSize":16,"bold":true},"mode":"edit","hAxis":{"useFormatFromData":true,"title":"渲染时间（单位：小时）","viewWindow":{}},"useFirstColumnAsDomain":true,"series":{"1":{"dataLabel":"value","annotations":{"stemColor":"none"}},"2":{"dataLabel":"none","annotations":{"stemColor":"none"}}},"width":600,"legacyContinuousAxisRemoved":true,"booleanRole":"certainty","height":371},"chartType":"BarChart","state":{},"isDefaultVisualization":true});
+google.visualization.normalize.normalizeChartWrapper(j, j.getDataTable(), true);
+j.draw(document.getElementById('c'));
+}
+
+function onNumberFormatApiLoad() {
+var renderNumberFormat = function(v,p) {
+return ritz_numberformat_api.NumberFormatApi.renderNumber(v, p, 'en_US');
+};
+google.visualization.NumberFormat.overrideFormatValue(renderNumberFormat);
+google.visualization.DateFormat.overrideFormatValue(function(v, p) {
+var millis = v.getTime() - v.getTimezoneOffset() * 60000;
+var excelTime = 25569 + millis / 86400000;
+return renderNumberFormat(excelTime, p);
+});
+drawChart();
+}</script></body></html>

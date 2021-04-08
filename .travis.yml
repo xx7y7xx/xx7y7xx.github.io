@@ -1,0 +1,39 @@
+# https://github.com/yegor256/blog/blob/master/.travis.yml
+
+os: linux
+dist: xenial
+language: ruby
+rvm:
+  - 2.7.1
+branches:
+  only:
+    - develop
+cache: bundler
+env:
+  global:
+    secure: CTnPK7u2ZwiK3UMmdWWLKBAvoOfukRFkMaJYuhBRGgxLA2LOrGEHlly4LO3sPccV2LjxdarhU1wRbLILUm7rLUGhTwDFkY1EBwMBP211JpavR2erlYdJpbHFJ9zzGPMgZdI3Pnh97yglBOtiSdVHIizyoLSp55jg7uuBAoj/SV2jYa/r5uVqtLo1Dfq+eTvD9mVbcCdIm85eJxvAsuDAk0ujjpIs/Aq7rndKxid1bNzISIzN1OMRUkrg6etQ9r3zAyS3Nz7JP/xaOG7vw1iBY4hwwDg6SlPSeTzETgvSx4As0q/29Azgkp+jsAoeibnlLxbvEmMlMSYfqjivPuW6NHk4smHn5vS4MgiIMzxSVE1iqNWmnb8nLclcjZ38ic9J3MFcntL5GYE8rZnedN/kS4FQ4bIyoauDQD0VR7LuQVJ4vlgF6B0Un3nAM2DqTxgao5Jyh0UlNblhhAoxaI9s2bwOVnk2QFQrykXgW/5fERMJEKbWJysZSau8a0KO9cgi1WrXWcMpjk8Tf5BQ+3U5x/8T6HL4IDYaL02KneaXs+dVM0klDspT2+BVoLOwLOrY9+YYoDKCyRMtB3F4Fkhn7oQALuZNxSEY9lhXeTtFKdPrlaexKYB3kI8lqOzop4WVMt3z1DGg6dCvjclh5tt8l5wveev8yf+ZJpyREru/NiE=
+addons:
+  apt:
+    packages:
+      - graphviz
+before_install:
+  - ls -l ./vendor/bundle
+  - set -e
+  - git config --global user.email "travis@xxd3vin.github.io"
+  - git config --global user.name "travis"
+  - openssl aes-256-cbc -K $encrypted_3a9bae88342b_key -iv $encrypted_3a9bae88342b_iv
+    -in id_rsa.enc -out id_rsa -d
+  - mv id_rsa ~/.ssh
+  - chmod 600 ~/.ssh/id_rsa
+  - cat ./Gemfile
+  - cat ./Gemfile.lock
+install:
+  - set -e
+  # Install all the dependencies
+  - travis_retry ./install.sh
+  - ls -l ./vendor/bundle
+script:
+  - set -e
+  #- _travis/test_pages_existence.sh
+  # TODO can replace with https://docs.travis-ci.com/user/deployment/pages/
+  - jgd --branch-from develop --branch master --url git@github.com:xxd3vin/xxd3vin.github.io.git

@@ -1,0 +1,119 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<title></title>
+		<script type="text/javascript" src="/demo/lib/swfobject.js">
+		</script>
+		<style type="text/css" title="Default">
+			body, div, h1, h2, h3, span, p {
+				font-family: Verdana,Arial,Helvetica,sans-serif;
+				color: #000000; 
+			}
+			body {
+			  font-size: 10pt;
+			  background : #ffffff; 
+			}
+			table,tr,td {
+				font-size: 10pt;
+				border-color : #777777;
+				background : #dddddd; 
+				color: #000000; 
+				border-style : solid;
+				border-width : 1px;
+			}
+			h1 {
+				font-size: 18pt;
+			}
+			h2 {
+				font-size: 14pt;
+			}
+			.warning {
+				font-weight: bold;
+			}
+		</style>	
+	</head>
+	<body>
+		<h1></h1>
+		<p>
+		<script type="text/javascript">
+<!--
+			var startNode=document.location.hash.substring(1);
+	
+			if (("onhashchange" in window) && (!(/MSIE (\d+\.\d+);/.test(navigator.userAgent)))) {
+				window.onhashchange = function () {
+					pano.openNext('{' + window.location.hash.substring(1) + '}');
+				}
+			} else {
+				var lastHash = window.location.hash;
+				window.setInterval(function () {
+					if (window.location.hash != lastHash) {
+						lastHash = window.location.hash;
+						pano.openNext('{' + window.location.hash.substring(1) + '}');
+					}
+				}, 100);
+			}
+	
+			var flashvars = {};
+			var params = {};
+			if (startNode.length>0) {
+				flashvars.startnode=startNode;
+			}
+			
+      var embedHandler = function (e){
+        mySWF = e.ref; //e.ref is a pointer to the <object>
+        //do something with mySWF
+        alert(mySWF.getFov());
+        mySWF.setFov(100);
+        mySWF.moveTo(1);
+        alert("move to next swf");
+        mySWF.openNext("/demo/data/pano2vr/a95246c545a44f5bb56f117eb8c80fce/swf/0000.swf");
+      };
+			
+				// enable javascript interface
+				flashvars.externalinterface="1";
+				//flashvars.skin="false";
+
+			params.quality = "high";
+			params.bgcolor = "#ffffff";
+			params.allowscriptaccess = "sameDomain";
+			params.allowfullscreen = "true";
+			params.base=".";
+			var attributes = {};
+			attributes.id = "pano";
+			attributes.name = "pano";
+			attributes.align = "middle";
+			swfobject.embedSWF(
+				"/demo/data/pano2vr/4765fe6d64dc4e5abe7d5cfbdac54675/swf/0000.swf", "flashContent", 
+				"1024", "720", 
+				"9.0.0", "expressInstall.swf", 
+				flashvars, params, attributes, embedHandler);
+//-->
+		</script>
+		<div id="flashContent">
+			<p><a href="http://www.adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" /></a></p>
+		</div>
+		
+		<p>
+		<table cellpadding="5" cellspacing="0">
+			<tr>
+				<td><b>Description</b></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><b>Author</b></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><b>Date/Time</b></td>
+				<td>2015:02:03 16:02:53</td>
+			</tr>
+			<tr>
+				<td><b>Copyright</b></td>
+				<td></td>
+			</tr>
+		</table>
+		</p>	
+	</body>
+</html>
+

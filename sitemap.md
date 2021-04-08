@@ -1,0 +1,129 @@
+---
+layout: page
+title: Sitemap
+---
+
+- [tags](/tags.html)
+- [categories](/categories.html)
+
+- [atom-plugins](/atom-plugins/index.html)
+  - [atom-ava](/atom-plugins/atom-ava.html)
+- dev
+  - [ios Capture packets](/dev/ios-capture-packets.html)
+  - [js test framework](/dev/js-test-framework.html)
+  - [ab](/dev/ab.html)
+- [lego](/lego/index.html)
+
+- [Development](development/index.html)
+  - [webdev](webdev)
+    - [如果网站禁用了右键菜单，如何恢复](js_re-enable-right-click-when-web-pages-turn-it-off)
+    - [mediawiki](mediawiki)
+    - [IE 下的调试方法](debug-in-ie)
+    - [老版本 IE 问题汇总](old-ie-problem)
+    - [qrcode](qrcode)
+    - [Apache Sling](apache-sling)
+      - [XPath Query](jcr-xpath-query)
+    - [Elasticsearch](elasticsearch)
+    - Tools
+      - [Brackets](brackets)
+      - [Atom](atom)
+      - [vim](vim)
+      - [Eclipse](eclipse)
+      - [wireshark](wireshark)
+      - [OpenCTM](openctm)
+    - [PHP](php)
+      - [Omnipay PHP payment processing library](omnipay)
+      - [Drupal](drupal)
+    - [alipay](alipay)
+    - [wechatpay](wechatpay)
+    - [NGINX](nginx)
+    - [aliyun](aliyun)
+    - [mongodb](mongodb)
+    - [iNode](inode)
+    - Javascript
+      - [Isomorphic Javascript](isomorphic-javascript)
+      - [React](react)
+      - [mocha](mocha)
+      - [gruntjs](gruntjs)
+      - [npmjs](npmjs)
+      - [Node.js](nodejs)
+      - [JQGrid](jqgrid)
+      - [jQuery](jquery)
+      - [three.js](threejs)
+      - [keystone](keystone)
+      - [Server-Send Events](server-send-events)
+    - [Java](java.html)
+      - [Maven](maven.html)
+  - maintainence
+    - [Trac (issue tracker)](trac)
+    - [DHCP server](dhcp-server)
+    - [VirtualBox](virtualbox)
+    - [SSH](ssh)
+    - [travis-ci](travis-ci)
+    - [Jenkins](jenkins)
+  - software development
+    - [Boinc](boinc)
+    - [shadowsocks](shadowsocks)
+  - Other
+    - [OCR](ocr)
+    - [panode](panode)
+  - document
+    - [Jekyll](jekyll)
+    - [YUIDoc](yuidoc)
+    - [jsdoc](jsdoc)
+- hobby
+  - [EE](ee)
+    - [raspberry pi](raspberry_pi)
+  - Live better
+    - [家庭收纳](home_organization)
+  - [bio](bio)
+  - [network](network)
+  - [programming](programming)
+  - [3d render](3d-render)
+  - [Github Pages](/development/github-pages/github-page.html)
+    - [Markdown tables](/kramdown.html#table)
+  - [Design](ui-design)
+  - [Product](product)
+  - [Backup](backup)
+  - DIY
+  - [analytics](analytics)
+  - Sport
+    - Skateboard - sk8
+    - Fixed-gear bicycle - fixie
+  - [Project Management](project-management)
+- [workflow](workflow)
+- doc
+  - [todo](todo)
+  - [howto](howto)
+- tools
+  - [常用工具](tools)
+  - [kb](kb)
+  - [How to user SVN (Subversion)](svn)
+- oth
+  - [想法](想法)
+  - [标记语法演示例子](github-page-markdown-syntax-demo)
+  - [SEO](seo)
+  - [Device List](device_list)
+  - [word](word)
+- Project
+  - d3vin
+    - [Live Bus](proj_LiveBus)
+    - [Web3D 校园](web3d_school)
+    - [blend2cs](blend2cs)
+    - krpano server - krpano_server
+  - [home design](/home_design.html)
+  - team
+    - [Coin Studio](proj_CoinStudio)
+  - [Parenting](parenting)
+    - [缓冲垫](缓冲垫)
+    - [妈咪包](diapers_bag)
+    - [安全座椅](car-seat)
+      - [Britax](britax)
+    - [婴儿车](stroller)
+    - [书](childrens-books)
+  - Live better
+    - [Dyson 吸尘器](dyson)
+    - [电锤](hammer-drill)
+    - [三星 JU5900 和 JU5920 的区别](samsung_ju5900_vs_ju5920)
+    - [三星电视](samsung-tv)
+  - [Other project](oth_project)
