@@ -1,7 +1,7 @@
 ---
 layout: page
 title: create-react-app
-permalink: /dev/create-react-app.html
+permalink: /dev/create-react-app/index.html
 ---
 
 ## With installation
