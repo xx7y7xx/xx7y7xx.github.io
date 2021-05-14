@@ -1,3 +1,9 @@
+---
+layout: page
+title: GitHub gh command line tool
+permalink: /dev/github/gh.html
+---
+
 ## Installation macOS
 
 ```
