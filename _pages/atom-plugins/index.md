@@ -31,6 +31,7 @@ permalink: /atom-plugins/index.html
 - [`flow-ide`](https://github.com/steelbrain/flow-ide) （有一个[`ide-flow`](https://github.com/lukehoban/atom-ide-flow)已经停止维护了）
 - language-docker
 - language-gitignore
+- platformio-ide-terminal - Open a terminal in Atom
 
 Atom doesn't have these plugins, but here is the replacements:
 
