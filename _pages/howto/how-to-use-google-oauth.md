@@ -65,11 +65,11 @@ The *ID Token* field is a JWT.
 
 ## How to get Google ID token (JWT) using a React component - react-google-login
 
-Use react-google-login for frontend, the source code in the geo-tools project is here.
+Use [react-google-login](https://www.npmjs.com/package/react-google-login) for frontend.
 
 When you log in successfully, the response is:
 
-Google OAuth2
+```
 {
   "El": "11301230672",
   "Zi": {
@@ -124,25 +124,32 @@ Google OAuth2
     "familyName": "Chen"
   }
 }
-The tokenId field is a JWT, and is acting as the password of login user.
+```
 
-JWT
-Here is an example of Google JWT
+The `tokenId` field is a JWT, and is acting as the password of login user.
 
+## JWT
+
+Here is an example of JWT
+
+```
 eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c
+```
 
-Use https://jwt.io/ to decode tokenId field
+Use [https://jwt.io/](https://jwt.io/) to decode
 
 Header:
 
+```
 {
   "alg": "RS256",
   "kid": "a711490b15be85a855a1bab483ab818d1b78b5aa4fba"
 }
-
+```
 
 Payload:
 
+```
 {
   "azp": "56475154419617-5i3s5o74ajpu381dl0nt7oj01lv7q91rnp.apps.googleusercontent.com",
   "aud": "56475154419617-5i3s5o74ajpu381dl0nt7oj01lv7q91rnp.apps.googleusercontent.com",
@@ -161,7 +168,9 @@ Payload:
   "family_name": "Chen",
   "locale": "en"
 }
+```
 
-References
-Google JWT ( tokenId field ) payload fields definition https://developers.google.com/identity/protocols/OpenIDConnect#obtainuserinfo
-Google Sign-In for Websites - https://developers.google.com/identity/sign-in/web/
+## References
+
+* Google JWT ( tokenId field ) payload fields definition [https://developers.google.com/identity/protocols/OpenIDConnect#obtainuserinfo](https://developers.google.com/identity/protocols/OpenIDConnect#obtainuserinfo)
+* Google Sign-In for Websites - [https://developers.google.com/identity/sign-in/web/](https://developers.google.com/identity/sign-in/web/)
