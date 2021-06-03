@@ -3,7 +3,6 @@
 Set redirect_url in [Google APIs Console](https://console.developers.google.com/apis/credentials?project=app-foo-bar&organizationId=123).
 For development, you can add http://localhost:3000 to Authorized JavaScript origins field
 
-TODO add img
 !()[/attachments/WX20171107-104419%402x.png]
 
 ## How to get Google ID token (JWT) manually
