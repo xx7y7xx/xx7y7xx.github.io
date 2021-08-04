@@ -35,3 +35,41 @@ export const paramsSerializer = params => {
 export const getDogs = params =>
   Api.get('/dogs', { params, paramsSerializer })
 ```
+
+## interceptors
+
+```js
+Api.interceptors.response.use(
+  response => {
+    return response.data
+  },
+  error => {
+    // Follow this to design the error processing
+    // https://gist.github.com/fgilio/230ccd514e9381fafa51608fcf137253
+    // https://github.com/axios/axios#handling-errors
+
+    // Error 😨
+    if (error.response) {
+      /*
+       * The request was made and the server responded with a
+       * status code that falls out of the range of 2xx
+       */
+      console.log(error.response.data);
+      console.log(error.response.status);
+      console.log(error.response.headers);
+    } else if (error.request) {
+      /*
+       * The request was made but no response was received, `error.request`
+       * is an instance of XMLHttpRequest in the browser and an instance
+       * of http.ClientRequest in Node.js
+       */
+      console.log(error.request);
+    } else {
+      // Something happened in setting up the request and triggered an Error
+      console.log('Error', error.message);
+    }
+
+    return Promise.reject(err)
+  }
+)
+```
