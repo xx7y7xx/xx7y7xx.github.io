@@ -1,6 +1,7 @@
 ---
 layout: page
 title: axios
+permalink: /dev/axios.html
 ---
 
 ## 现象
