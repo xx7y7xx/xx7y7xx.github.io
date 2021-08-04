@@ -62,8 +62,16 @@ yarn test
 test single file
 
 ```
-yarn test-all src/index.test.jsx
+yarn test src/index.test.js
 ```
+
+test without watch mode
+
+```
+$ yarn test-all index.test.js -- --watchAll=false
+```
+
+Ref: https://stackoverflow.com/questions/39724017/running-cra-jest-in-non-interactive-mode
 
 Generate for all the directories
 
