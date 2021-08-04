@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Jest
+permalink: /dev/jest.html
 ---
 
 ## Run with yarn/npm
