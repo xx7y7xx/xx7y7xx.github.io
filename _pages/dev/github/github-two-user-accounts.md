@@ -1,19 +1,8 @@
 ---
 layout: page
-title: github
+title: GitHub two user accounts
+permalink: /dev/github/github-two-user-accounts.html
 ---
-
-## github workflow
-
-### Merging an upstream repository into your fork
-
-[https://help.github.com/articles/merging-an-upstream-repository-into-your-fork/](https://help.github.com/articles/merging-an-upstream-repository-into-your-fork/)
-
-```
-cd react-bootstrap-table
-git pull https://github.com/AllenFang/react-bootstrap-table.git
-git push
-```
 
 ## Two user accounts
 
@@ -79,17 +68,11 @@ $ git clone git@github.com:foo/hello-world.git
 
 To git clone repo from another user account. If the URL is copy from GitHub web UI, then need change `@github.com:` to `@github.com-bar:`.
 
-
 ```
 $ git clone git@github.com-bar:bar/hello-world.git
 ```
 
 Ref:
-* https://gist.github.com/oanhnn/80a89405ab9023894df7
-* https://gist.github.com/jexchan/2351996
 
-## See also
-
-- [Github Page](/development/github-pages/github-page.html)
-- [Github following](/github-following.html)
-- [github markdown](/github-markdown.html)
+- https://gist.github.com/oanhnn/80a89405ab9023894df7
+- https://gist.github.com/jexchan/2351996
