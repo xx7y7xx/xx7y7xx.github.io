@@ -11,8 +11,8 @@ permalink: /dev/github/github-two-user-accounts.html
 Generate two SSH keys
 
 ```
-~/.ssh/foo/id_rsa
-~/.ssh/bar/id_rsa
+~/.ssh/id_rsa     # default user
+~/.ssh/bar/id_rsa # not common used account
 ```
 
 Add SSH keys to `~/.ssh/config`
@@ -22,7 +22,7 @@ Add SSH keys to `~/.ssh/config`
 Host github.com
   HostName github.com
   User git
-  IdentityFile ~/.ssh/foo/id_rsa
+  IdentityFile ~/.ssh/id_rsa
 
 # Another user account
 Host github.com-bar
@@ -35,9 +35,9 @@ To test SSH connection between local and GitHub
 
 ```
 $ ssh -T git@github.com
-Hi foo! You've successfully authenticated, but GitHub does not provide shell access.
+Hi Default User! You've successfully authenticated, but GitHub does not provide shell access.
 $ ssh -T git@github.com-bar
-Hi bar! You've successfully authenticated, but GitHub does not provide shell access.
+Hi Bar! You've successfully authenticated, but GitHub does not provide shell access.
 ```
 
 ### Git config
@@ -46,13 +46,22 @@ Add the default user to global Git config `~/.gitconfig`
 
 ```
 [user]
-        name = Foo
-        email = 1234567+foo@users.noreply.github.com
+        name = Default User
+        email = 1234567+defaultuser@users.noreply.github.com
 ```
 
-Add another user to repo's Git config `.git/config`
+Add the not common used user to project's gitconfig file
 
 ```
+$ cd ~/source/github/bar/bar-test
+$ vim .git/config
+```
+
+Add following
+
+```
+[remote "origin"]
+        url = git@github.com-bar:bar/bar-test.git
 [user]
         name = Bar
         email = 1234567+bar@users.noreply.github.com
@@ -63,13 +72,15 @@ Add another user to repo's Git config `.git/config`
 To git clone repo from default user account
 
 ```
-$ git clone git@github.com:foo/hello-world.git
+$ cd ~/source/github/defaultuser
+$ git clone git@github.com:defaultuser/hello-world.git
 ```
 
 To git clone repo from another user account. If the URL is copy from GitHub web UI, then need change `@github.com:` to `@github.com-bar:`.
 
 ```
-$ git clone git@github.com-bar:bar/hello-world.git
+$ cd ~/source/github/bar
+$ git clone git@github.com-bar:bar/bar-test.git
 ```
 
 Ref:
