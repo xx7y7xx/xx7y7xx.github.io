@@ -1,16 +1,29 @@
-npx create-react-app demo-viewer
+---
+layout: page
+title: GitHub Actions
+permalink: /dev/create-react-app/github-action.html
+---
 
+```
+$ npx create-react-app demo-viewer
 cd demo-viewer
+```
 
 modify package.json, add content:
 
+```
 "homepage": "https://user-name.github.io/demo-viewer/",
+```
 
-yarn start
+```
+$ yarn start
+```
 
 http://localhost:3000/
 
-yarn build
+```
+$ yarn build
+```
 
 ```
 $ ls -1 build
@@ -24,13 +37,17 @@ robots.txt
 static
 ```
 
-gh repo create user-name/demo-viewer --confirm --public
+```
+$ gh repo create user-name/demo-viewer --confirm --public
 
-git push -u origin master
+$ git push -u origin master
 
-mkdir -p .github/workflows
+$ mkdir -p .github/workflows
+```
 
-touch .github/workflows/build-deploy.yml
+```
+$ touch .github/workflows/build-deploy.yml
+```
 
 content is
 
@@ -49,22 +66,22 @@ jobs:
   build:
     name: Build
     runs-on: ubuntu-latest
-    
+
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
-    
+
     - name: Install Node.js
       uses: actions/setup-node@v1
       with:
         node-version: 14.x
-    
+
     - name: Install NPM packages
       run: yarn
-    
+
     - name: Build project
       run: yarn build
-    
+
     - name: Run tests
       run: yarn test
 
@@ -73,13 +90,13 @@ jobs:
       with:
         name: production-files
         path: ./build
-  
+
   deploy:
     name: Deploy
     needs: build
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/master'
-    
+
     steps:
     - name: Download artifact
       uses: actions/download-artifact@v2
@@ -100,9 +117,9 @@ change in repo project setting, use gh-pages branch as the source.
 
 ## See also
 
-* /dev/create-react-app/github.html
+- [create-react-app and github](/dev/create-react-app/github.html)
 
 ## references
 
-* https://codeburst.io/deploying-a-react-app-using-github-pages-and-github-actions-7fc14d380796
-* https://github.com/marketplace/actions/github-pages-action
+- https://codeburst.io/deploying-a-react-app-using-github-pages-and-github-actions-7fc14d380796
+- https://github.com/marketplace/actions/github-pages-action
