@@ -1,6 +1,7 @@
 ---
 layout: page
 title: vscode
+permalink: /dev/vscode/index.html
 ---
 
 ## user setting
@@ -38,10 +39,10 @@ Create `tsconfig.json` under project root dir
 
 ```json
 {
-    "compilerOptions": {
-        "experimentalDecorators": true,
-        "allowJs": true
-    }
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "allowJs": true
+  }
 }
 ```
 
@@ -78,17 +79,15 @@ Ctrl+P, `ext install docthis`
 - vscode-tslint
   - `"tslint.autoFixOnSave": true` enable auto fix on save.
 
-
 ## FAQ
 
 ### VSCode not auto completing HTML
 
 1. type `div` or `<div`
 2. press `Tab` key
-2. Optional, press `Tab` key again
+3. Optional, press `Tab` key again
 
 [https://stackoverflow.com/a/37638626/4685522](https://stackoverflow.com/a/37638626/4685522)
-
 
 ### How can I change keyboard shortcut bindings in Visual Studio Code?
 
@@ -152,4 +151,4 @@ Ctrl+P, then input filename to search, press enter to open selected file.
 
 ## See also
 
-* [VS Code x Go](/vscode-go.md)
+- [VS Code x Go](/vscode-go.md)
