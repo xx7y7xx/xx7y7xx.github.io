@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Jest
-permalink: /dev/jest.html
+permalink: /dev/jest/index.html
 ---
 
 ## Run with yarn/npm
@@ -79,41 +79,6 @@ Generate for all the directories
 $ yarn test --coverage
 ```
 
-## Test environment
-
-You can select with "jsdom"(default) and "node".
-
-How to apply this environment variable:
-
-Method 1: Globally, in command line option
-
-```
-$ jest --env node
-```
-
-Method 2: Globally, in `package.json`
-
-```json
-{
-  "jest": {
-    "testEnvironment": "node"
-  }
-}
-```
-
-Method 3: Per files, in `*.js` (available in Jest 20.0.0+)
-
-```js
-/**
- * @jest-environment jsdom
- */
-
-test("use jsdom in this test file", () => {
-  const element = document.createElement("div");
-  expect(element).not.toBeNull();
-});
-```
-
 ## Code coverage report
 
 Use this to exclude this file in the coverage report.
@@ -155,10 +120,10 @@ expect(1).toBe(1) // primitive value
 
 ## Config vs CLI
 
-| Config                       | CLI                                                | Default Value |
-| :--------------------------- | :------------------------------------------------- | ------------- |
-| `"collectCoverage": true`    | --coverage=true or --coverage or --collectCoverage | `false`       |
-| `"testEnvironment": "jsdom"` | `--env=jsdom`                                      | "node"        |
+| Config                       | CLI                                                | In file                             | Default Value |
+| :--------------------------- | :------------------------------------------------- | ----------------------------------- | ------------- |
+| `"collectCoverage": true`    | --coverage=true or --coverage or --collectCoverage | ...                                 | `false`       |
+| `"testEnvironment": "jsdom"` | `--env=jsdom`                                      | [jest-env](/dev/jest/jest-env.html) | "node"        |
 
 ## References
 
