@@ -118,12 +118,12 @@ expect({foo:'bar'}).toEqual({foo:'bar'}) // object
 expect(1).toBe(1) // primitive value
 ```
 
-## Config vs CLI
+## Configurations vs CLI Options
 
-| Config                       | CLI                                                | In file                             | Default Value |
-| :--------------------------- | :------------------------------------------------- | ----------------------------------- | ------------- |
-| `"collectCoverage": true`    | --coverage=true or --coverage or --collectCoverage | ...                                 | `false`       |
-| `"testEnvironment": "jsdom"` | `--env=jsdom`                                      | [jest-env](/dev/jest/jest-env.html) | "node"        |
+| Configurations ([https://jestjs.io/docs/configuration](https://jestjs.io/docs/configuration)) | CLI Options ([https://jestjs.io/docs/cli](https://jestjs.io/docs/cli)) | In file                             | Default Value |
+| :-------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------- | ----------------------------------- | ------------- |
+| `"collectCoverage": true`                                                                     | --coverage=true or --coverage or --collectCoverage                     | ...                                 | `false`       |
+| `"testEnvironment": "jsdom"`                                                                  | `--env=jsdom`                                                          | [jest-env](/dev/jest/jest-env.html) | "node"        |
 
 ## References
 
