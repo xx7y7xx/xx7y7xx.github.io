@@ -111,8 +111,10 @@ import 'antd/dist/antd.css';
 `--env` is the command line option for Jest CLI, document: [https://jestjs.io/docs/cli#--envenvironment](https://jestjs.io/docs/cli#--envenvironment).
 Possible value could be `jsdom` or `node`.
 
-The related configuration key is `testEnvironment` which is mentioned in this document: [https://jestjs.io/docs/configuration#testenvironment-string](https://jestjs.io/docs/configuration#testenvironment-string).
-The defualt value of this configuration is `node`.
+The defualt value of `--env` of Jest is `node`, in this document: [https://jestjs.io/docs/configuration#testenvironment-string](https://jestjs.io/docs/configuration#testenvironment-string).
+But in create-react-app, will change env to `jsdom` (source code: [https://github.com/facebook/create-react-app/blob/bb64e31a81eb12d688c14713dce812143688750a/packages/react-scripts/scripts/test.js#L109](https://github.com/facebook/create-react-app/blob/bb64e31a81eb12d688c14713dce812143688750a/packages/react-scripts/scripts/test.js#L109)).
+
+The related changelog about it: [https://github.com/facebook/create-react-app/blob/bb64e31a81eb12d688c14713dce812143688750a/CHANGELOG-2.x.md#the-default-jest-environment-was-changed-to-jsdom](https://github.com/facebook/create-react-app/blob/bb64e31a81eb12d688c14713dce812143688750a/CHANGELOG-2.x.md#the-default-jest-environment-was-changed-to-jsdom)
 
 ## Config override in `package.json`
 
