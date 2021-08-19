@@ -68,7 +68,7 @@ yarn test src/index.test.js
 test without watch mode
 
 ```
-$ yarn test-all index.test.js -- --watchAll=false
+$ yarn test index.test.js -- --watchAll=false
 ```
 
 Ref: https://stackoverflow.com/questions/39724017/running-cra-jest-in-non-interactive-mode
