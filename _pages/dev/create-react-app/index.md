@@ -96,6 +96,21 @@ import 'antd/dist/antd.css';
 
 [https://auth0.com/blog/how-to-configure-create-react-app/](https://auth0.com/blog/how-to-configure-create-react-app/)
 
+## `packages.json` Definitions
+
+```json
+{
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=node"
+  }
+}
+```
+
+`--env` is the command line option for Jest CLI, document: [https://jestjs.io/docs/cli#--envenvironment](https://jestjs.io/docs/cli#--envenvironment).
+Possible value could be `jsdom` or `node`.
+
 ## Config override in `package.json`
 
 ### jest
