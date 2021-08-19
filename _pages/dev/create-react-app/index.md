@@ -111,6 +111,9 @@ import 'antd/dist/antd.css';
 `--env` is the command line option for Jest CLI, document: [https://jestjs.io/docs/cli#--envenvironment](https://jestjs.io/docs/cli#--envenvironment).
 Possible value could be `jsdom` or `node`.
 
+The related configuration key is `testEnvironment` which is mentioned in this document: [https://jestjs.io/docs/configuration#testenvironment-string](https://jestjs.io/docs/configuration#testenvironment-string).
+The defualt value of this configuration is `node`.
+
 ## Config override in `package.json`
 
 ### jest
@@ -137,6 +140,10 @@ class Map extends Component {
 Setup environment variables in Travis CI
 
 [https://travis-ci.com/github/your-user-name/your-repo-name/settings](https://travis-ci.com/github/your-user-name/your-repo-name/settings)
+
+## See also
+
+- [Jest](/dev/jest.html)
 
 ## References
 

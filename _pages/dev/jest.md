@@ -155,9 +155,10 @@ expect(1).toBe(1) // primitive value
 
 ## Config vs CLI
 
-| Config                    | CLI                                                | Default Value |
-| :------------------------ | :------------------------------------------------- | ------------- |
-| `"collectCoverage": true` | --coverage=true or --coverage or --collectCoverage | `false`       |
+| Config                       | CLI                                                | Default Value |
+| :--------------------------- | :------------------------------------------------- | ------------- |
+| `"collectCoverage": true`    | --coverage=true or --coverage or --collectCoverage | `false`       |
+| `"testEnvironment": "jsdom"` | `--env=jsdom`                                      | "node"        |
 
 ## References
 
