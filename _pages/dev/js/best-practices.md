@@ -52,3 +52,7 @@ But because this bad import chain, we import `react-bmapgl` indirectly.
 And unfortunately there is a bug in `react-bmapgl` source code which calls `parentNode` before checking existing of `s`. (`react-bmapgl` assumes the envionment already is a browser)
 
 Solution is moving `KEY` from `BaiduMap.jsx` to another `contants.js` file.
+
+## See also
+
+- [https://github.com/xx7y7xx/js-api-tests](https://github.com/xx7y7xx/js-api-tests)
