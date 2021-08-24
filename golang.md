@@ -22,3 +22,15 @@ go get ./...
 ```
 $ brew install go@1.13
 ```
+
+## lint error
+
+```
+File is not correctly formatted according to goimports.
+```
+
+```
+goimports -w main.go
+```
+
+this will update the original `main.go` file.
