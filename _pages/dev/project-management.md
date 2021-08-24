@@ -2,10 +2,30 @@
 layout: page
 title: Project management
 categories: management
-permalink: /develop/project-management.html
+permalink: /dev/project-management.html
 ---
 
-## Must have
+## web applicaion life cycle
+
+1. Design
+   1. User research
+   1. Product design
+   1. UI design
+1. Implementing
+   1. Engg spec
+   1. Coding
+      1. unittest
+   1. Code review
+1. Testing
+   1. QA testing
+   1. Automation testing
+1. Release
+   1. CI/CD
+1. Oncall
+   1. Monitor
+   1. Keep dependencies up to date
+
+## Must have - how to implement a new feature
 
 Simply refer to web development.
 
@@ -14,7 +34,6 @@ Simply refer to web development.
 - Deploy
 - Trainning
 - Code review
-- @TODO
 
 ## To deliver a new feature what should be have
 
@@ -40,19 +59,19 @@ Simply refer to web development.
 
 缺点：
 
-- card的description和comment部分对markdown支持有限，比如不支持代码高亮。
-- 不支持gantt chart（至少免费版没有）
+- card 的 description 和 comment 部分对 markdown 支持有限，比如不支持代码高亮。
+- 不支持 gantt chart（至少免费版没有）
 
 ### GitLab
 
 优点：
 
-- 几乎所有可编辑的地方都支持markdown，并且对代码高亮支持的很好。
+- 几乎所有可编辑的地方都支持 markdown，并且对代码高亮支持的很好。
 - 可以直接渲染`*.md`文件
 
 缺点：
 
-- 对项目管理支持不友好，只能通过每个repo的issue来写todo。
+- 对项目管理支持不友好，只能通过每个 repo 的 issue 来写 todo。
 
 ### Teambition
 
@@ -62,7 +81,7 @@ Simply refer to web development.
 
 缺点：
 
-- 任务的“备注”（相当于Trello card中的description）对markdown支持有限，比如不支持代码高亮。（markdown是免费插件，需要单独打开）
+- 任务的“备注”（相当于 Trello card 中的 description）对 markdown 支持有限，比如不支持代码高亮。（markdown 是免费插件，需要单独打开）
 
 ## Instant Messaging (Collaboration)
 
