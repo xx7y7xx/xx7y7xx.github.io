@@ -1,7 +1,7 @@
 ---
 layout: page
 title: ab (apache bench)
-permalink: /dev/db.html
+permalink: /dev/ab.html
 ---
 
 ## apache bench(ab)
