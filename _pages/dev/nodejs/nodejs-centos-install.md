@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Node.js CentOS Installation
+permalink: /dev/nodejs/nodejs-centos-install.html
 ---
 
 ## CentOS 7.x
@@ -44,7 +45,7 @@ curl --silent --location https://rpm.nodesource.com/setup_6.x | bash -
 ```
 
 ```
-# rpm -qf /etc/yum.repos.d/nodesource-el.repo 
+# rpm -qf /etc/yum.repos.d/nodesource-el.repo
 nodesource-release-el7-1.noarch
 ```
 
@@ -71,7 +72,7 @@ v6.10.3
 ```
 
 ```
-[root@yy238 ~]# cat /etc/yum.repos.d/nodesource-el.repo 
+[root@yy238 ~]# cat /etc/yum.repos.d/nodesource-el.repo
 [nodesource]
 name=Node.js Packages for Enterprise Linux 7 - $basearch
 baseurl=https://rpm.nodesource.com/pub_6.x/el/7/$basearch
@@ -131,9 +132,9 @@ check the env
 run this command to show package name.
 
 ```
-# rpm -qf /etc/yum.repos.d/nodesource-el.repo 
+# rpm -qf /etc/yum.repos.d/nodesource-el.repo
 file /etc/yum.repos.d/nodesource-el.repo is not owned by any package
-# rpm -qf /etc/yum.repos.d/nodesource-el7.repo 
+# rpm -qf /etc/yum.repos.d/nodesource-el7.repo
 nodesource-release-el7-1.noarch
 ```
 
@@ -161,4 +162,3 @@ yum install -y nodejs
 ```
 
 remove with `sudo yum remove nodesource-release`, then `/etc/yum.repos.d/nodesource-el.repo` will be removed.
-

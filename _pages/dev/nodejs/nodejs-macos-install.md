@@ -1,6 +1,7 @@
 ---
 layout: page
 title: nodejs macOS install
+permalink: /dev/nodejs/nodejs-macos-install.html
 ---
 
 ## Method 1 - Homebrew
@@ -303,7 +304,7 @@ $ lsbom -f -l -s -pf /var/db/receipts/org.nodejs.node.pkg.bom | while read f; do
 
 Follow the installation steps in [NVM](/nvm.html)
 
-Be sure to uninstall the node installed by homebrew or *.pkg file, according to this issue [https://github.com/nvm-sh/nvm/issues/1918](https://github.com/nvm-sh/nvm/issues/1918)
+Be sure to uninstall the node installed by homebrew or \*.pkg file, according to this issue [https://github.com/nvm-sh/nvm/issues/1918](https://github.com/nvm-sh/nvm/issues/1918)
 
 ## See also
 
