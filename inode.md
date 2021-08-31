@@ -3,8 +3,6 @@ layout: page
 title: iNode
 ---
 
-以下环境都是用友内网
-
 ```
 chenyang@chenyang-pc:~$ ps -ef|grep iNode
 root     30848     1  0 13:16 ?        00:00:00 /home/chenyang/opt/iNodeClient/AuthenMngService
