@@ -53,6 +53,14 @@ $ brew install node@12
 $ brew link node@12
 ```
 
+### Downgrade from v16 to v14
+
+```
+$ brew unlink node
+$ brew install node@14
+$ brew link node@14
+```
+
 ### Uninstall
 
 ```
