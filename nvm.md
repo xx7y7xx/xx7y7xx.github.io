@@ -24,7 +24,7 @@ $ brew ls node
 
 From this issue [https://github.com/nvm-sh/nvm/issues/1918](https://github.com/nvm-sh/nvm/issues/1918), seems that you have to uninstall the node installed by homebrew.
 
-Follow the steps in [uninstall steps for homebrew](/nodejs-macos-install.html) to uninstall/remove all the version of node installed by Homebrew.
+Follow the steps in [uninstall steps for homebrew](/dev/nodejs/nodejs-macos-install.html) to uninstall/remove all the version of node installed by Homebrew.
 
 Follow the installation steps on [https://github.com/nvm-sh/nvm](https://github.com/nvm-sh/nvm)
 
@@ -240,5 +240,3 @@ v12.16.1
 ```
 
 So it's still the version installed by nvm.
-
-

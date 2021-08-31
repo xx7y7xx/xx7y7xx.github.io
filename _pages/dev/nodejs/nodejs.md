@@ -2,15 +2,16 @@
 layout: page
 title: NodeJS
 published: true
+permalink: /dev/nodejs/nodejs.html
 ---
 
 ## TOC
 
 - Node.js installation
-  - [macOS](/nodejs-macos-install.html)
-  - [Windows](/nodejs-windows-install.html)
-  - [Ubuntu](/nodejs-ubuntu-install.html)
-  - [CentOS](/nodejs-centos-install.html)
+  - [macOS](/dev/nodejs/nodejs-macos-install.html)
+  - [Windows](/dev/nodejs/nodejs-windows-install.html)
+  - [Ubuntu](/dev/nodejs/nodejs-ubuntu-install.html)
+  - [CentOS](/dev/nodejs/nodejs-centos-install.html)
 
 ## Common module list
 
@@ -18,9 +19,9 @@ published: true
 require("Module ID")
 ```
 
-Module ID | API
-----------|----
-request   | https://github.com/request/request
+| Module ID | API                                |
+| --------- | ---------------------------------- |
+| request   | https://github.com/request/request |
 
 ## Old API
 
@@ -31,21 +32,21 @@ https://nodejs.org/docs/v0.10.33/api/index.html
 - multithread
 - event loop
 
-## nodejs和Java等后端通讯的方案
+## nodejs 和 Java 等后端通讯的方案
 
-- zeromq 
+- zeromq
 
-## nodejs市场使用情况
+## nodejs 市场使用情况
 
 [https://w3techs.com/technologies/details/ws-nodejs/all/all](https://w3techs.com/technologies/details/ws-nodejs/all/all)
 
 ## 适用领域
 
-场景1：快速构建demo，在演示后，如果原型确定下来，再将node中的一部分使用Java等后端语言改写，或者完全使用Java等其他语言改写。
+场景 1：快速构建 demo，在演示后，如果原型确定下来，再将 node 中的一部分使用 Java 等后端语言改写，或者完全使用 Java 等其他语言改写。
 
-场景2：将渲染层从前端转移到后端，这样做是缓存友好以及SEO友好的。
+场景 2：将渲染层从前端转移到后端，这样做是缓存友好以及 SEO 友好的。
 
-场景3：构建微服务，比如为移动端添加一个新的服务。
+场景 3：构建微服务，比如为移动端添加一个新的服务。
 
 ## image processing
 
@@ -91,5 +92,5 @@ $ node -p process.versions.v8
 
 ## CMS
 
-* [https://github.com/keystonejs/keystone](https://github.com/keystonejs/keystone)
-* [https://github.com/strapi/strapi/](https://github.com/strapi/strapi/)
+- [https://github.com/keystonejs/keystone](https://github.com/keystonejs/keystone)
+- [https://github.com/strapi/strapi/](https://github.com/strapi/strapi/)

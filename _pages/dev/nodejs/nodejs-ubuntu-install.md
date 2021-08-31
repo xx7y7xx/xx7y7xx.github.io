@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Node.js Ubuntu Installation
+permalink: /dev/nodejs/nodejs-ubuntu-install.html
 ---
 
 ## Install on Ubuntu 16.04
@@ -19,7 +20,7 @@ sudo apt-get install -y nodejs
 sudo apt-get install -y build-essential
 ```
 
-配置npm源
+配置 npm 源
 
 ```
 npm config set registry https://registry.npm.taobao.org
