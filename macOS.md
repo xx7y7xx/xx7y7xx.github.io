@@ -30,7 +30,9 @@ Hold down the Control key and click the application icon. From the contextual me
 
 ## Common Software
 
-- diff [http://www.sourcegear.com/diffmerge/index.html](http://www.sourcegear.com/diffmerge/index.html)
+- diff
+   - [http://www.sourcegear.com/diffmerge/index.html](http://www.sourcegear.com/diffmerge/index.html)
+   - P4Merge - [https://www.perforce.com/downloads/visual-merge-tool](https://www.perforce.com/downloads/visual-merge-tool)
 - CPU temperature [http://fannywidget.com/](http://fannywidget.com/)
 - iTerm2 [iterm2](/iterm2.html)
 - zsh [zsh](/dev/zsh/index.html)
