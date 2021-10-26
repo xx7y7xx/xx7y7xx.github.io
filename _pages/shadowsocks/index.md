@@ -1,6 +1,7 @@
 ---
 layout: page
 title: shadowsocks
+permalink: /shadowsocks/index.html
 ---
 
 ## Common operation for server side
