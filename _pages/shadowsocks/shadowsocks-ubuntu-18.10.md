@@ -1,6 +1,7 @@
 ---
 layout: page
 title: shadowsocks
+permalink: /shadowsocks/shadowsocks-ubuntu-18.10.html
 ---
 
 ## Insall shadowsocks on Ubuntu 18.10 (Vultr)
@@ -32,6 +33,7 @@ Command "python setup.py egg_info" failed with error code 1 in /tmp/pip-build-U7
 according to [http://stackoverflow.com/questions/14426491/python-3-importerror-no-module-named-setuptools](http://stackoverflow.com/questions/14426491/python-3-importerror-no-module-named-setuptools)
 
 first check the python version
+
 ```
 root@vultr:~# python --version
 Python 2.7.15+
@@ -219,7 +221,6 @@ chmod +x /etc/rc.local
 /usr/bin/python /usr/local/bin/ssserver -c /etc/shadowsocks.json -d start
 ```
 
-
 ## See also
 
-- [shadowsocks](/shadowsocks.html)
+- [shadowsocks](/shadowsocks/index.html)

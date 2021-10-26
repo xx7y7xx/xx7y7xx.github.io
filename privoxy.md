@@ -23,7 +23,7 @@ debug   8192 # Non-fatal errors
 
 ## See also
 
-- [shadowsocks](/shadowsocks.html)
+- [shadowsocks](/shadowsocks/index.html)
 
 ## References
 

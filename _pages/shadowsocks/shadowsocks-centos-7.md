@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Shadowsocks installation on CentOS 7
+permalink: /shadowsocks/shadowsocks-centos-7.html
 ---
 
 ```
@@ -15,7 +16,6 @@ yum install shadowsocks-libev
 ```
 # vim /etc/shadowsocks-libev.json
 ```
-
 
 ```
 {

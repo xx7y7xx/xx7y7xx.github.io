@@ -63,7 +63,7 @@ title: Sitemap
     - [Jenkins](jenkins)
   - software development
     - [Boinc](boinc)
-    - [shadowsocks](shadowsocks)
+    - [shadowsocks](/shadowsocks/index.html)
   - Other
     - [OCR](ocr)
     - [panode](panode)
