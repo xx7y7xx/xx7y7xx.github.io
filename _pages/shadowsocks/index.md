@@ -91,6 +91,19 @@ sudo apt-get install shadowsocks-qt5
 - [https://itunes.apple.com/us/app/shadowrocket/id932747118?mt=8](https://itunes.apple.com/us/app/shadowrocket/id932747118?mt=8)
 - [https://github.com/h2y/Shadowrocket-ADBlock-Rules](https://github.com/h2y/Shadowrocket-ADBlock-Rules)
 
+## Issue investigation
+
+### Check server port
+
+- [http://tool.chinaz.com/port/](http://tool.chinaz.com/port/)
+- [http://port.ping.pe/](http://port.ping.pe/)
+
+Ref: [https://www.bandwagonhost.net/1934.html](https://www.bandwagonhost.net/1934.html)
+
+### Check server IP address
+
+- [https://kiwivm.64clouds.com/main-exec.php?mode=blacklistcheck](https://kiwivm.64clouds.com/main-exec.php?mode=blacklistcheck)
+
 ## FAQ
 
 ### 服务器能 ping 通，但是浏览器访问不了 google.com
