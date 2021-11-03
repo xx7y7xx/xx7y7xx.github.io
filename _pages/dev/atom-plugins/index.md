@@ -14,7 +14,7 @@ permalink: /dev/atom-plugins/index.html
 - project-manager
 - minimap
 - highlight-selected
-- minimap-highlight-selected (will install highlight-selected)
+- minimap-highlight-selected (will install minimap, highlight-selected)
 - autoclose-html
 - pigments
 - auto-detect-indentation
@@ -64,6 +64,10 @@ ctrl+shift+p `EditorConfig: show state` 查看状态，修复问题，比如将�
 [remote "."]
         url = git@gitlab.com:foo/bar.git
 ```
+
+## highlight-selected
+
+![Gif in action](http://i.imgur.com/C5FnzzQ.gif)
 
 ## See also
 
