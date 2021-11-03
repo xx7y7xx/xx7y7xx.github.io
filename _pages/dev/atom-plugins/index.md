@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Atom plugins
-permalink: /atom-plugins/index.html
+permalink: /dev/atom-plugins/index.html
 ---
 
 ## Theme
