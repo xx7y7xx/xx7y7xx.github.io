@@ -1,7 +1,7 @@
 ---
 layout: page
 title: atom-ava
-permalink: /atom-plugins/atom-ava.html
+permalink: /dev/atom-plugins/atom-ava.html
 ---
 
 ## Features
