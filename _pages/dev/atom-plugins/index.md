@@ -67,6 +67,8 @@ ctrl+shift+p `EditorConfig: show state` 查看状态，修复问题，比如将�
 
 ## highlight-selected
 
+[https://github.com/richrace/highlight-selected](https://github.com/richrace/highlight-selected)
+
 ![Gif in action](http://i.imgur.com/C5FnzzQ.gif)
 
 ## See also
