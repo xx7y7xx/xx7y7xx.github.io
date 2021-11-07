@@ -297,6 +297,10 @@ Python 2.7 will be removed in macOS (Version 10.16)
 
 - Scripting Language Runtimes - Deprecations](https://developer.apple.com/documentation/macos_release_notes/macos_catalina_10_15_release_notes#3318257)
 
+## Fixing Tags Encoding of map3 files
+
+Tag Editor - [https://amvidia.com/guides/music-organising/fixing-tags-encoding](https://amvidia.com/guides/music-organising/fixing-tags-encoding)
+
 ## See also
 
 - [Brew](/homebrew.html)
