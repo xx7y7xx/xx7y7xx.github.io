@@ -38,3 +38,24 @@ If you want to get ref after `Form.create`, you could use `wrappedComponentRef` 
   onSubmit={this.handleSubmit}
 />
 ```
+
+## Table
+
+In `"antd": "3.26.20",` when pagination prop is null
+
+```jsx
+<Table
+  ...
+  pagination={null}
+/>
+```
+
+The error is
+
+```
+Uncaught TypeError: Cannot use 'in' operator to search for 'current' in null
+    at Table.getDefaultPagination (Table.js:809)
+    at new Table (Table.js:761)
+```
+
+Try to change `pagination={false}`
