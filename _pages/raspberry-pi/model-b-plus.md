@@ -1,10 +1,12 @@
 ---
+permalink: /raspberry-pi/model-b-plus.html
 layout: page
-title: Raspberry Pi
+title: Raspberry Pi Model B+
 ---
+
 ## 目录
 
-- [GPIO入门](rpi_gpio)
+- [GPIO 入门](rpi_gpio)
 
 ## 配件
 
@@ -13,37 +15,36 @@ title: Raspberry Pi
 - display (dell 24 inch)
 - kb/ms (logitech)
 - sd card
-- nic 
+- nic
 - power cable
-
 
 ## archlinux
 
-1. 插上网线，在pc上使用nmap之类扫出ip地址
-2. 使用ip地址ssh上去，用户名和密码都是root
-3. 安装wireless，参照[http://raspberrypi.stackexchange.com/a/7992](http://raspberrypi.stackexchange.com/a/7992)
-4. 将wireless设定为开机启动。[http://unix.stackexchange.com/a/83108](http://unix.stackexchange.com/a/83108)
-5. 显示cpu温度：[https://wiki.archlinux.org/index.php/Raspberry_Pi#Temperature](https://wiki.archlinux.org/index.php/Raspberry_Pi#Temperature)
-6. 安装apache和php。[http://kiros.co.uk/blog/installing-lamp-linuxapachemysqlphp-on-the-raspberry-pi/](http://kiros.co.uk/blog/installing-lamp-linuxapachemysqlphp-on-the-raspberry-pi/)
+1. 插上网线，在 pc 上使用 nmap 之类扫出 ip 地址
+2. 使用 ip 地址 ssh 上去，用户名和密码都是 root
+3. 安装 wireless，参照[http://raspberrypi.stackexchange.com/a/7992](http://raspberrypi.stackexchange.com/a/7992)
+4. 将 wireless 设定为开机启动。[http://unix.stackexchange.com/a/83108](http://unix.stackexchange.com/a/83108)
+5. 显示 cpu 温度：[https://wiki.archlinux.org/index.php/Raspberry_Pi#Temperature](https://wiki.archlinux.org/index.php/Raspberry_Pi#Temperature)
+6. 安装 apache 和 php。[http://kiros.co.uk/blog/installing-lamp-linuxapachemysqlphp-on-the-raspberry-pi/](http://kiros.co.uk/blog/installing-lamp-linuxapachemysqlphp-on-the-raspberry-pi/)
 
 ## raspbian
 
-### 配置wifi
+### 配置 wifi
 
 参照：
 
 - [http://www.howtogeek.com/167425/how-to-setup-wi-fi-on-your-raspberry-pi-via-the-command-line/](http://www.howtogeek.com/167425/how-to-setup-wi-fi-on-your-raspberry-pi-via-the-command-line/)
-- id_str是关键，请参照[http://www.electroschematics.com/9496/static-manual-ip-wireless-raspberry-pi/](http://www.electroschematics.com/9496/static-manual-ip-wireless-raspberry-pi/)
-- 关于debian的网络设置 [https://wiki.debian.org/NetworkConfiguration](https://wiki.debian.org/NetworkConfiguration)
+- id_str 是关键，请参照[http://www.electroschematics.com/9496/static-manual-ip-wireless-raspberry-pi/](http://www.electroschematics.com/9496/static-manual-ip-wireless-raspberry-pi/)
+- 关于 debian 的网络设置 [https://wiki.debian.org/NetworkConfiguration](https://wiki.debian.org/NetworkConfiguration)
 
 最终效果
 
     pi@raspberrypi ~ $ cat /etc/network/interfaces
     auto lo
-    
+
     iface lo inet loopback
     iface eth0 inet dhcp
-    
+
     allow-hotplug wlan0
     iface wlan0 inet manual
     wpa-roam /etc/wpa_supplicant/wpa_supplicant.conf
@@ -51,56 +52,54 @@ title: Raspberry Pi
         address 192.168.12.3
         netmask 255.255.255.0
         gateway 192.168.12.1
-    
+
     iface default inet dhcp
 
     pi@raspberrypi ~ $ sudo cat /etc/wpa_supplicant/wpa_supplicant.conf
     #ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
     #update_config=1
-    
+
     network={
     ssid="abcdefghi"
     psk="123456789"
-    
+
     # Protocol type can be: RSN (for WP2) and WPA (for WPA1)
     proto=RSN
-    
+
     # Key management type can be: WPA-PSK or WPA-EAP (Pre-Shared or Enterprise)
     key_mgmt=WPA-PSK
-    
+
     # Pairwise can be CCMP or TKIP (for WPA2 or WPA1)
     pairwise=CCMP TKIP
-    
+
     #Authorization option should be OPEN for both WPA1/WPA2 (in less commonly used are SHARED and LEAP)
     auth_alg=OPEN
-    
+
     # used in /etc/network/interface
     id_str="chenyang"
     }
 
 ## 配置相机
 
-挂载samba，修改/etc/fstab文件
-    //192.168.12.10/cloud   /home/pi/mnt/192.168.12.10      cifs    username=devin,password=123456,uid=1000     0       0
-
+挂载 samba，修改/etc/fstab 文件
+//192.168.12.10/cloud /home/pi/mnt/192.168.12.10 cifs username=devin,password=123456,uid=1000 0 0
 
     pi@raspberrypi ~ $ pwd
     /home/pi
     pi@raspberrypi ~ $ cat camera.sh
     #!/bin/bash
-    
+
     DATE=$(date +"%Y-%m-%d_%H%M")
-    
+
     raspistill -vf -hf -o /home/pi/mnt/192.168.12.10/$DATE.jpg
     pi@raspberrypi ~ $ cat /etc/cron.d/camera
     *       *       *       *       *       pi      /home/pi/camera.sh
 
 ## 时间不正确
 
-原型raspi-config重新设定一下time zone，比较将time zone设定为shanghai，然后时间就恢复正确了。
+原型 raspi-config 重新设定一下 time zone，比较将 time zone 设定为 shanghai，然后时间就恢复正确了。
 
-目前不确定是什么问题引起的时间不正确的问题。 
-
+目前不确定是什么问题引起的时间不正确的问题。
 
 ## 需要看的文章
 
