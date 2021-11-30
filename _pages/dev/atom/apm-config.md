@@ -6,9 +6,9 @@ title: apm config
 ## apm config
 
 ```
- ~  apm config get proxy2
+$ apm config get proxy2
 undefined
- ~  apm config get proxy
+$ apm config get proxy
 null
 ```
 
@@ -93,15 +93,15 @@ http://127.0.0.1:8118/
 ### Set proxy for Atom on Ubuntu 16.04 # {#set-proxy-for-atom-on-ubuntu-16.04}
 
 ```
- ~  apm config get proxy
+$ apm config get proxy
 null
- ~  apm config set proxy "http://127.0.0.1:8080"
- ~  apm config get proxy
+$ apm config set proxy "http://127.0.0.1:8080"
+$ apm config get proxy
 http://127.0.0.1:8080/
- ~  apm config get https-proxy
+$ apm config get https-proxy
 null
- ~  apm config set https-proxy "http://127.0.0.1:8080"
- ~  apm config get https-proxy
+$ apm config set https-proxy "http://127.0.0.1:8080"
+$ apm config get https-proxy
 http://127.0.0.1:8080/
 ```
 

@@ -1,6 +1,7 @@
 ---
+permalink: /raspberry-pi/model-b-plus-gpio.html
 layout: page
-title: Raspberry Pi GPIO
+title: Raspberry Pi Model B+ GPIO
 ---
 
 ## Project 1：light a LED
