@@ -9,3 +9,18 @@ Show the left side panel
 TODO - snapshot here
 
 Source code: https://github.com/keplergl/kepler.gl/blob/v1.1.11/src/components/side-panel.js
+
+## Layers
+
+### Arc layer colors base on value of another
+
+```js
+const arcLayer = layers.find(layer => layer.type === 'arc')
+this.props.layerVisualChannelConfigChange(arcLayer, {
+  colorField: {
+    name: 'apple_size',
+    type: 'integer'
+  },
+  colorScale: 'quantize'
+})
+```
