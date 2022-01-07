@@ -10,6 +10,18 @@ TODO - snapshot here
 
 Source code: https://github.com/keplergl/kepler.gl/blob/v1.1.11/src/components/side-panel.js
 
+## Left side panel
+
+By setting `readOnly` as `false`, we could show left side panel.
+
+```js
+this.props.addDataToMap({
+  options: {
+    readOnly: false
+  }
+})
+```
+
 ## Layers
 
 ### Arc layer colors base on value of another
