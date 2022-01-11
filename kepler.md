@@ -36,3 +36,12 @@ this.props.layerVisualChannelConfigChange(arcLayer, {
   colorScale: 'quantize'
 })
 ```
+
+### Show H3 layer
+
+The name should be something like "hex_id", if name is "h3_hash", it will not show as H3 layer automatically.
+
+```js
+fields: [
+  { name: 'hex_id', format: '', type: 'string' }
+```
