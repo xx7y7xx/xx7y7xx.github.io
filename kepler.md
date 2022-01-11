@@ -45,3 +45,14 @@ The name should be something like "hex_id", if name is "h3_hash", it will not sh
 fields: [
   { name: 'hex_id', format: '', type: 'string' }
 ```
+
+## Map
+
+### Zoom to a bbox
+
+```js
+import * as turf from '@turf/turf'
+import { fitBounds } from 'kepler.gl/actions'
+const bbox = turf.bbox(turf.point([longitude, latitude])) // [103.785, 1.435, 103.785, 1.435]
+this.props.dispatch(fitBounds(bbox))
+```
