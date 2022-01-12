@@ -63,6 +63,8 @@ https://github.com/uber-common/vis-academy/blob/kepler.gl/src/demos/kepler.gl/3-
 
 http://vis.academy/#/kepler.gl/3-load-config
 
+https://github.com/keplergl/kepler.gl/issues/176
+
 ```js
 class App extends React.Component {
   // This method is used as reference to show how to export the current kepler.gl instance configuration
