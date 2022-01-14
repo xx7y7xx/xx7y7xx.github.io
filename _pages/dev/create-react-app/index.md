@@ -44,6 +44,7 @@ Method 2
 
 ```
 $ npx create-react-app my-app
+$ npx create-react-app@v4.0.3 my-app # create-react-app uses webpack 5 from version 5.0.0, so you may want to use an old version of create-react-app@v4.0.3
 ```
 
 ## Config
