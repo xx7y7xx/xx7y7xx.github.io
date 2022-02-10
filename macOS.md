@@ -31,8 +31,8 @@ Hold down the Control key and click the application icon. From the contextual me
 ## Common Software
 
 - diff
-   - [http://www.sourcegear.com/diffmerge/index.html](http://www.sourcegear.com/diffmerge/index.html)
-   - P4Merge - [https://www.perforce.com/downloads/visual-merge-tool](https://www.perforce.com/downloads/visual-merge-tool)
+  - [http://www.sourcegear.com/diffmerge/index.html](http://www.sourcegear.com/diffmerge/index.html)
+  - P4Merge - [https://www.perforce.com/downloads/visual-merge-tool](https://www.perforce.com/downloads/visual-merge-tool)
 - CPU temperature [http://fannywidget.com/](http://fannywidget.com/)
 - iTerm2 [iterm2](/iterm2.html)
 - zsh [zsh](/dev/zsh/index.html)
@@ -300,6 +300,10 @@ Python 2.7 will be removed in macOS (Version 10.16)
 ## Fixing Tags Encoding of map3 files
 
 Tag Editor - [https://amvidia.com/guides/music-organising/fixing-tags-encoding](https://amvidia.com/guides/music-organising/fixing-tags-encoding)
+
+But the free version of "Tag Editor" cannot support bulk fixing multiple mp3 files.
+
+Another tool I tried is MusicBrainz Picard ([https://picard.musicbrainz.org/](https://picard.musicbrainz.org/)), but it doesn't support fixing encoding. But we could use it to bulk rename mp3 tags.
 
 ## See also
 
