@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Start a Lego train motor set 88011 with Raspberry Pi Build HAT"
+title: "Start a LEGO train motor set 88011 with Raspberry Pi Build HAT"
 ---
 
 ## Prepare
@@ -42,9 +42,12 @@ After checking the connect motor is [`PassiveMotor`](https://github.com/Raspberr
 
 Then let's try to start the motor.
 
+First check the port we just connect on the board, there are 4 ports, from "A" to "D".
+Let's connect port "A".
+
 ```py
 >>> from buildhat import PassiveMotor
->>> a=PassiveMotor('A')
+>>> a = PassiveMotor('A') # passing port name
 >>> a.run_for_seconds(5)
 Traceback (most recent call last):
   File "<pyshell>", line 1, in <module>
@@ -57,8 +60,36 @@ Different motors may have different APIs, so you will find that `run_for_seconds
 
 Check the source code to find more APIs related to `PassiveMotor`: [`motors.py`](https://github.com/RaspberryPiFoundation/python-build-hat/blob/main/buildhat/motors.py)
 
+## env
+
+Python version
+
+```
+>>> import sys
+>>> print(sys.version)
+3.7.3 (default, Jul 25 2020, 13:03:44)
+[GCC 8.3.0]
+```
+
+buildhat version
+
+```
+pi@raspberrypi:~ $ pip3 show buildhat
+Name: buildhat
+Version: 0.5.6
+Summary: Build HAT Python library
+Home-page: https://github.com/RaspberryPiFoundation/python-build-hat
+Author: Raspberry Pi Foundation
+Author-email: web@raspberrypi.org
+License: UNKNOWN
+Location: /home/pi/.local/lib/python3.7/site-packages
+Requires: gpiozero, pyserial
+Required-by:
+```
+
 ## References
 
 - [Official Website](https://www.raspberrypi.com/products/build-hat/)
 - [Raspberry Pi Build HAT Document](https://buildhat.readthedocs.io/en/latest/buildhat/hat.html)
 - [Getting Started with the Raspberry Pi Build HAT (Control LEGO Technic devices with Raspberry Pi)](https://cdn-shop.adafruit.com/product-files/5287/getting-started-buildhat.pdf)
+- [https://github.com/RaspberryPiFoundation/python-build-hat](https://github.com/RaspberryPiFoundation/python-build-hat)
