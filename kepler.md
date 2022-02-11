@@ -105,3 +105,7 @@ class App extends React.Component {
   }
 }
 ```
+
+## why kepler.gl lock to a specific deck.gl version?
+
+See thisi PR: https://github.com/keplergl/kepler.gl/pull/1602 ([Bug] lock deck.gl to 8.2.0 #1602) )
