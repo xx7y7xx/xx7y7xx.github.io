@@ -25,6 +25,13 @@ $ yarn config get https-proxy
 http://localhost:1087
 ```
 
+Clear existing proxy.
+
+```
+$ yarn config delete proxy
+$ yarn config delete https-proxy
+```
+
 ## common commands
 
 list packages installed globally
