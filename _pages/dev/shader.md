@@ -5,3 +5,4 @@ Here is a glsl editor: https://github.com/patriciogonzalezvivo/glslEditor
 ## Shader online editor
 
 * https://shader-factory.herokuapp.com/
+* http://editor.thebookofshaders.com/
