@@ -5,11 +5,11 @@
 git tag v0.1.0
 git push origin v0.1.0
 yarn build
-npm publish # --access=public
+npm publish --access=public
 
 ## others
 npm version patch
-git push origin v0.1.2
+git push && git push origin v0.1.2
 yarn build
-npm publish # --access=public
+npm publish --access=public
 ```
