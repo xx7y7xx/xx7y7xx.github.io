@@ -1,4 +1,4 @@
-# Personal notes [![Build Status](https://img.shields.io/travis/xxd3vin/xxd3vin.github.io/develop.svg?style=flat)](https://travis-ci.org/xxd3vin/xxd3vin.github.io)
+# Personal notes [![Build Status](https://img.shields.io/travis/xx7y7xx/xx7y7xx.github.io/develop.svg?style=flat)](https://travis-ci.org/xx7y7xx/xx7y7xx.github.io)
 
 ## Dependencies
 

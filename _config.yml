@@ -11,9 +11,9 @@ title: personal notes
 description: > # this means to ignore newlines until "baseurl:"
   Full Stack Engineer at Grab
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://xxd3vin.github.io" # the base hostname & protocol for your site
+url: "https://xx7y7xx.github.io" # the base hostname & protocol for your site
 #twitter_username: jekyllrb
-github_username: xxd3vin
+github_username: xx7y7xx
 
 # Build settings
 # Github Recommended Settings
@@ -21,8 +21,8 @@ markdown: kramdown
 
 # Blog Settings
 #lang: en
-#domain: xxd3vin.github.io
-#title: xxd3vin
+#domain: xx7y7xx.github.io
+#title: xx7y7xx
 #tagline: ':(){:|:&amp;};:'
 
 # Use Gemfile to manage gems.
