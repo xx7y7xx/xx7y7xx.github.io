@@ -171,6 +171,19 @@ This boilerplate follow the rule of airbnb [https://github.com/xxd3vin/airbnb-np
 $ npm install --registry=https://registry.npm.taobao.org --loglevel=silly
 ```
 
+## proxy
+
+```
+npm config get proxy
+npm config set proxy http://localhost:1087
+```
+
+Reset
+
+```
+npm config delete proxy
+```
+
 ## See also
 
 - [npm installation](/dev/npm-installation.html)
