@@ -61,10 +61,21 @@ Upgrade everything with:
 $ brew upgrade
 ```
 
-Or upgrade a specific formula with:
+Or upgrade a specific formula with `brew upgrade <formula>`, e.g.:
 
 ```
-$ brew upgrade <formula>
+$ brew upgrade yarn
+```
+
+## Upgrade Homebrew
+
+```
+$ brew -v
+Homebrew 3.2.10
+$ brew update
+...
+$ brew -v
+Homebrew 3.4.7
 ```
 
 ## Common CLI options
@@ -72,7 +83,7 @@ $ brew upgrade <formula>
 | Description                  | Command                  |
 | :--------------------------- | :----------------------- |
 | Show package information     | `brew info dialog`       |
-| Show installed package       | `$ brew list | less`     |
+| Show installed package       | `\$ brew list            | less` |
 | Update formulae and Homebrew | `brew update`            |
 | Update formula               | `brew upgrade <formula>` |
 
