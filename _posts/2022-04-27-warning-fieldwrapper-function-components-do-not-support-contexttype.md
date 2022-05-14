@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "Warning: Foo: Function components do not support contextType."
+title: "Warning: Foo: Function components do not support contextType"
 ---
 
 Error:
 
 ```
-Warning: Foo: Function components do not support contextType.
+Warning: Foo: Function components do not support contextType
 ```
 
 Code:
