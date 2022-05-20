@@ -113,3 +113,14 @@ See thisi PR: https://github.com/keplergl/kepler.gl/pull/1602 ([Bug] lock deck.g
 ## Load data from URL
 
 https://kepler.gl/demo?mapUrl=https://gist.githubusercontent.com/xx7y7xx/50d7d888e01471ae9ec978a3057c9ddc/raw/aa0b132c76b8bb7bc592ccbdbfdca96ee61800f0/a.csv
+
+## Add new filter
+
+```js
+import { useDispatch } from 'react-redux'
+import * as actions from 'kepler.gl/actions'
+const dispatch = useDispatch()
+dispatch(actions.addFilter('data_id'))
+dispatch(actions.setFilter(4, 'name', 'column_name'))
+dispatch(actions.setFilter(4, 'value', ['foo', 'bar']))
+```
