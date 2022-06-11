@@ -7,16 +7,16 @@ permalink: /shadowsocks/shadowsocks-centos-7.html
 ## Installation steps
 
 ```
-yum install epel-release -y
-# yum install gcc gettext autoconf libtool automake make pcre-devel asciidoc xmlto udns-devel libev-devel -y
-cd /etc/yum.repos.d/
-wget https://copr.fedoraproject.org/coprs/librehat/shadowsocks/repo/epel-7/librehat-shadowsocks-epel-7.repo
-yum update
-yum install shadowsocks-libev
+# yum install epel-release -y
+# yum install wget vim gcc gettext autoconf libtool automake make pcre-devel asciidoc xmlto udns-devel libev-devel -y
+# cd /etc/yum.repos.d/
+# wget https://copr.fedoraproject.org/coprs/librehat/shadowsocks/repo/epel-7/librehat-shadowsocks-epel-7.repo --no-check-certificate
+# yum update
+# yum install shadowsocks-libev
 ```
 
 ```
-# vim /etc/shadowsocks-libev.json
+# vim /etc/shadowsocks-libev/config.json
 ```
 
 ```
