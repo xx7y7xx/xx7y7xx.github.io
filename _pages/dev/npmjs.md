@@ -184,6 +184,21 @@ Reset
 npm config delete proxy
 ```
 
+## FAQ
+
+If still see this error after deleting proxy.
+
+```
+error An unexpected error occurred: "https://registry.npmjs.org/@db-man%2fgithub: tunneling socket could not be established, cause=connect ECONNREFUSED 127.0.0.1:1087".
+```
+
+Beside npm, there is also a yarn config for proxy.
+
+```
+$ yarn config delete proxy
+$ yarn config delete https-proxy
+```
+
 ## See also
 
 - [npm installation](/dev/npm-installation.html)
