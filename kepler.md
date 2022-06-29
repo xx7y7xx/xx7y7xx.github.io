@@ -142,3 +142,11 @@ Modify webpack config
         querystring: false
       }
 ```
+
+Start kepler.gl
+
+```
+$ rm -rf node_modules/kepler.gl/node_modules/react-redux ; npm start
+```
+
+Note: This is to fix react-redux conflict error: Uncaught Error: Could not find "store" in the context of "Connect(Container)".
