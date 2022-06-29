@@ -129,5 +129,16 @@ dispatch(actions.setFilter(4, 'value', ['foo', 'bar']))
 
 ```
 $ npx create-react-app keplergl-demo --template redux
-$ npm i kepler.gl styled-components
+$ npm i kepler.gl styled-components assert
+```
+
+Modify webpack config
+
+```
+    resolve: {
+      fallback: {
+        assert: require.resolve('assert'),
+        url: false,
+        querystring: false
+      }
 ```
