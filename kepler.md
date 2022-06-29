@@ -124,3 +124,10 @@ dispatch(actions.addFilter('data_id'))
 dispatch(actions.setFilter(4, 'name', 'column_name'))
 dispatch(actions.setFilter(4, 'value', ['foo', 'bar']))
 ```
+
+## Init a new project
+
+```
+$ npx create-react-app keplergl-demo --template redux
+$ npm i kepler.gl styled-components
+```
