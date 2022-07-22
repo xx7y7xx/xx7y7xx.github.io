@@ -161,7 +161,7 @@ $ lsbom -f -l -s -pf /var/db/receipts/org.nodejs.node.pkg.bom | while read f; do
 
 ## Method 3 - NVM
 
-Follow the installation steps in [NVM](/nvm.html)
+Follow the installation steps in [NVM](/dev/nodejs/nvm.html)
 
 Be sure to uninstall the node installed by homebrew or \*.pkg file, according to this issue [https://github.com/nvm-sh/nvm/issues/1918](https://github.com/nvm-sh/nvm/issues/1918)
 
