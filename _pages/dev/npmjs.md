@@ -199,6 +199,24 @@ $ yarn config delete proxy
 $ yarn config delete https-proxy
 ```
 
+## Use Github branch as dependency in package.json
+
+```json
+  "dependencies": {
+    "@db-man/components": "github:db-man/components"
+  }
+```
+
+By default, when you run `npm i`, it will not upgrade `@db-man/components` to the latest version.
+
+Instead you need to run `npm i @db-man/components`. A quick way is to add `postinstall`, so that you only need to run `npm i`.
+
+```json
+ "scripts": {
+    "postinstall": "npm i @db-man/components"
+  },
+```
+
 ## See also
 
 - [npm installation](/dev/npm-installation.html)
