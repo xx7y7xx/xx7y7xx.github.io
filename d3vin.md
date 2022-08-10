@@ -22,4 +22,3 @@ Source: [https://github.com/xxd3vin/ssc_web-boilerplate](https://github.com/xxd3
 
 - Chrome extension
   - Insert React component to a web page [https://github.com/xxd3vin/chrome-ext-insert-react-component](https://github.com/xxd3vin/chrome-ext-insert-react-component)
-  - Yonyou iWeb DevTools extension [https://github.com/xxd3vin/iweb-devtools-extension](https://github.com/xxd3vin/iweb-devtools-extension) (private)
