@@ -66,3 +66,14 @@ deploy:
   on:
     branch: main
 ```
+
+## Using `"homepage"` in package.json, without messing up paths for localhost
+
+https://stackoverflow.com/questions/43011207/using-homepage-in-package-json-without-messing-up-paths-for-localhost
+
+```
+"scripts": {
+  "build": "react-scripts build",
+  "build-localhost": "PUBLIC_URL=/ react-scripts build"
+}
+```
