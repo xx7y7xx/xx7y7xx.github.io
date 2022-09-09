@@ -9,6 +9,7 @@ title: macOS
 - `brew install wget` (The installation script of other tools may use `wget` to download file from github.com)
 - `brew install md5sha1sum` ( could use `md5sum` command line tools )
 - https://www.intel.com/content/www/us/en/developer/articles/tool/power-gadget.html
+- https://github.com/Snipaste/feedback
 
 ## Init
 
