@@ -81,7 +81,7 @@ $ cat /etc/shells
 Make it your default shell
 
 ```
-chsh -s $(which zsh)
+$ chsh -s $(which zsh)
 ```
 
 Log out and login back again
