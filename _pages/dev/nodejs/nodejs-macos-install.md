@@ -10,6 +10,7 @@ These installation/upgrade/uninstallation steps are follow [http://blog.teamtree
 
 ```
 $ brew install node
+$ brew install node@16
 ```
 
 ```
