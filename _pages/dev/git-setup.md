@@ -1,3 +1,9 @@
+---
+layout: page
+title: git setup
+permalink: /dev/git-setup.html
+---
+
 ```
 $ git config --global alias.co checkout
 $ git config --global alias.br branch
