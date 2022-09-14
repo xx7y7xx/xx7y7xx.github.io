@@ -11,6 +11,10 @@ title: macOS
 - https://www.intel.com/content/www/us/en/developer/articles/tool/power-gadget.html
 - https://github.com/Snipaste/feedback
 
+## Setup
+
+* [git setup](/dev/git-setup.html)
+
 ## Init
 
 ### How to tab between buttons on an Mac OS X dialog box
