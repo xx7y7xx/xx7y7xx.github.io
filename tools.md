@@ -3,7 +3,10 @@ layout: page
 title: tools
 ---
 
-- 从 youtube 上抓视频 - http://keepvid.com/
+## GitHub pages/posts
+
+- [/tools/post-name.html](/tools/post-name.html)
+- [https://blog.tersmitten.nl/slugify/](https://blog.tersmitten.nl/slugify/)
 
 ## chrome 插件
 
@@ -41,3 +44,7 @@ Content-Length: 57
 {"I do not speak": "json"}
 {"I do not write it": "either"}
 ```
+
+## Others
+
+- 从 youtube 上抓视频 - http://keepvid.com/
