@@ -86,6 +86,7 @@ Homebrew 3.4.7
 | Show installed package       | `\$ brew list            | less` |
 | Update formulae and Homebrew | `brew update`            |
 | Update formula               | `brew upgrade <formula>` |
+| Clean cache                  | `brew cleanup -s`        |
 
 ## Check wheter a formula/package is installed or not
 
