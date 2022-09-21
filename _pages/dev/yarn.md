@@ -62,6 +62,12 @@ show verbose print
 yarn add antd --verbose
 ```
 
+Clean cache
+
+```
+$ brew cleanup -s
+```
+
 ## See also
 
 - [yarn installation](/dev/yarn-installation.html)
