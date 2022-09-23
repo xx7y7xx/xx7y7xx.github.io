@@ -150,3 +150,40 @@ $ rm -rf node_modules/kepler.gl/node_modules/react-redux ; npm start
 ```
 
 Note: This is to fix react-redux conflict error: Uncaught Error: Could not find "store" in the context of "Connect(Container)".
+
+## Field definitions
+
+```json
+{
+  datasets: {},
+  config: {
+    visState: {
+      filters: [
+        {
+          id: 'students_count',
+          dataId: 'students_count',
+          name: 'Students Count',
+          type: 'range',
+          enlarged: false,
+          value: [0, 100],
+        }
+      ],
+      layers: []
+    }
+  }
+}
+```
+
+```
+// src/constants/default-settings.js
+export const ALL_FIELD_TYPES = keyMirror({
+  boolean: null,
+  date: null,
+  geojson: null,
+  integer: null,
+  real: null,
+  string: null,
+  timestamp: null,
+  point: null
+});
+```
