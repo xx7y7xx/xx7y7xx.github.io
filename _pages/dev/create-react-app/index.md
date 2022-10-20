@@ -144,6 +144,44 @@ Setup environment variables in Travis CI
 
 [https://travis-ci.com/github/your-user-name/your-repo-name/settings](https://travis-ci.com/github/your-user-name/your-repo-name/settings)
 
+## Absolute imports
+
+https://create-react-app.dev/docs/importing-a-component/#absolute-imports
+
+```
+// import FooBar from '../../../FooBar';
+import FooBar from 'components/FooBar';
+```
+
+`jsconfig.json`
+
+```json
+{
+  "compilerOptions": {
+    "baseUrl": "src"
+  },
+  "include": ["src"]
+}
+```
+
+`package.json`
+
+```json
+{
+  "eslintConfig": {
+    "settings": {
+      "import/resolver": {
+        "node": {
+          "paths": ["src"]
+        }
+      }
+    }
+  }
+}
+```
+
+Without setting the `import/resolver` for eslint, you will get error: "Unable to resolve path to module 'components/FooBar'. (import/no-unresolved)"
+
 ## See also
 
 - [Jest](/dev/jest.html)
