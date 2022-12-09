@@ -187,3 +187,7 @@ export const ALL_FIELD_TYPES = keyMirror({
   point: null
 });
 ```
+
+## Examples
+
+* GeoJSON - https://kepler.gl/demo?mapUrl=https://gist.githubusercontent.com/xx7y7xx/2c26754503984878b5c8c184055a4e63/raw/44e5bac4110a45fdd5b6e3ee007a240bc7d8466a/kepler-gl-geojson.csv
