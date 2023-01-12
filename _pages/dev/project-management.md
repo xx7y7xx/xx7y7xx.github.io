@@ -96,6 +96,14 @@ man-hour, man-day, man-week, man-month, or man-year
 
 [https://en.wikipedia.org/wiki/Man-hour](https://en.wikipedia.org/wiki/Man-hour)
 
+## Backbone
+
+* Customer-centric
+  * meeting to collect feedback
+  * keep connection with customer (how?)
+  * plan the implementation and sync up with customer
+  * finish the implmentation and syncup with customer
+
 ## See also
 
 - [Team](/develop/team.html)
