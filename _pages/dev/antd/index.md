@@ -1,6 +1,7 @@
 ---
 layout: page
 title: antd ant design
+permalink: /dev/antd/index.html
 ---
 
 ## Form
