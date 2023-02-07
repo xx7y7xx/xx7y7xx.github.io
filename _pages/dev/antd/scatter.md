@@ -14,3 +14,7 @@ import { Scatter } from '@ant-design/plots';
   }}
 />
 ```
+
+## Examples
+
+* https://codesandbox.io/s/issue-2001-b255j?file=/index.ts
