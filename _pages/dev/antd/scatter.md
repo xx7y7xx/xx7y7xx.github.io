@@ -11,6 +11,9 @@ import { Scatter } from '@ant-design/plots';
   legend={false}
   onReady={(plot) => {
     // plot.chart.tooltip
+    
+    // Disable animation in scatter chart
+    plot.chart.animate(false);
   }}
 />
 ```
