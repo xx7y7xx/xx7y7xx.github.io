@@ -40,3 +40,6 @@ import { Scatter } from '@ant-design/plots'; // ^1.2.3
 ## Examples
 
 * https://codesandbox.io/s/issue-2001-b255j?file=/index.ts
+* Simple - https://codesandbox.io/s/antv-scatter-fqx3kl
+* Bubble chart with view-zoom - https://codesandbox.io/s/antv-scatter-view-zoom-4idgi1
+
