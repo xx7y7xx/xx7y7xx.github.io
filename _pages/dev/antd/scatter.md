@@ -13,6 +13,8 @@ import { Scatter } from '@ant-design/plots';
     // plot.chart.tooltip
     
     // Disable animation in scatter chart
+    // * https://charts.ant.design/en/docs/api/common-graph/common-graph#animate
+    // * https://antv.gitbook.io/f2/api/chart/animation#chart.animate-false
     plot.chart.animate(false);
   }}
 />
