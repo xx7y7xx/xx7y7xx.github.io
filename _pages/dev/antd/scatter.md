@@ -1,7 +1,7 @@
 ---
 layout: page
 title: ant design plots Scatter
-permalink: /dev/amap/index.html
+permalink: /dev/antd/scatter.html
 ---
 
 ```jsx
