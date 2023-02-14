@@ -193,7 +193,20 @@ export const ALL_FIELD_TYPES = keyMirror({
 ```jsx
 <KeplerGl
   getMapboxRef={mapRef => {
-    mapbox = mapRef?.getMap(),
+    mapbox = mapRef?.getMap()
+    // List all mapbox layers in kepler.gl
+    console.log('All mapbox layers:', mapbox.getStyle().layers)
+  }}
+/>
+```
+
+## Get deckgl from kepler.gl
+
+```jsx
+<KeplerGl
+  onDeckInitialized={(deck /*Deck*/, gl /*WebGL2RenderingContext*/) => {
+    // List all deck.gl layers in kepler.gl
+    console.log('All deck.gl layers', deck.layerManager.layers);
   }}
 />
 ```
