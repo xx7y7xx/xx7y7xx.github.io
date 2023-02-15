@@ -1,3 +1,9 @@
+---
+layout: page
+title: retejs
+permalink: /dev/retejs.html
+---
+
 ## Control
 
 
