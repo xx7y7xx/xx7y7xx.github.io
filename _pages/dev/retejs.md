@@ -12,3 +12,9 @@ export default class CodeBoxControl extends Rete.Control {
   // }
 }
 ```
+
+## Remove all nodes and connections
+
+```js
+editor.clear();
+```
