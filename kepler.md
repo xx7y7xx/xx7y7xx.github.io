@@ -46,6 +46,18 @@ fields: [
   { name: 'hex_id', format: '', type: 'string' }
 ```
 
+### Show or hide layers
+
+```
+import * as actions from 'kepler.gl/actions';
+const layer = rootState.keplerGl.mapId.visState.layers[0]
+this.props.dispatch(
+  actions.layerConfigChange(layer, {
+    isVisible: true,
+  }),
+);
+```
+
 ## Map
 
 ### Zoom to a bbox
