@@ -25,12 +25,14 @@ export default class CodeBoxControl extends Rete.Control {
 editor.clear();
 ```
 
-## How to get node in control
+## Control
+
+### How to get node in control
 
 Node is the parent of control.
 
-```
-export default class InputControl extends Rete.Control {
+```js
+class InputControl extends Rete.Control {
   constructor(emitter, key) {
     // not ready
     console.log(this.parent); // null
@@ -38,6 +40,18 @@ export default class InputControl extends Rete.Control {
   
   handleChange(val) {
     console.log(this.parent); // Node {name:"",id:1}
+  }
+}
+```
+
+### How to get data and save data in control
+
+```js
+class InputControl extends Rete.Control {
+  handleChange(val) {
+    // this.key is the current control key
+    console.log('old val:', this.getData(this.key)); // old val: 1
+    this.setData(this.key, 2); // new val: 2
   }
 }
 ```
