@@ -26,16 +26,14 @@ runtime [ref](http://stackoverflow.com/a/9916089):
 
 ## Run content scripts both in new pages/tabs and iframes
 
-By default, when `http://kaoqin.ufida.com.cn/query/filltimecard.aspx` page was in a frame of a page, the content scripts will not run.
+By default, when `http://abc.com/ifram/test.html` page was in a frame of a page, the content scripts will not run.
 
 You could use `all_frames` switch to make sure content scripts running in all pages, and also frames.
-
-This is a sample `manifest.json` coming from [https://github.com/yyssc/filltimecard/blob/master/manifest.json](https://github.com/yyssc/filltimecard/blob/master/manifest.json):
 
 ```
   "content_scripts": [
     {
-      "matches": ["http://kaoqin.ufida.com.cn/query/filltimecard.aspx"],
+      "matches": ["http://abc.com/ifram/test.html"],
       "all_frames": true,
       "js": [
         "fill.js"
