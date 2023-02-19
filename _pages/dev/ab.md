@@ -67,4 +67,4 @@ Percentage of the requests served within a certain time (ms)
 
 ## References
 
-- [https://kalamuna.atlassian.net/wiki/display/KALA/Testing+With+Apache+Benchmark+and+Siege](https://kalamuna.atlassian.net/wiki/display/KALA/Testing+With+Apache+Benchmark+and+Siege)
+- [https://kalamuna.atlassian.net/wiki/spaces/KALA/pages/16023587/Load+Testing+With+Apache+Benchmark+and+Siege](https://kalamuna.atlassian.net/wiki/spaces/KALA/pages/16023587/Load+Testing+With+Apache+Benchmark+and+Siege)
