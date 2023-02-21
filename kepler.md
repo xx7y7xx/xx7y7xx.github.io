@@ -223,6 +223,21 @@ export const ALL_FIELD_TYPES = keyMirror({
 />
 ```
 
+## Tooltip
+
+path: keplerGl.<mapId>.visState.interactionConfig.tooltip.config.fieldsToShow.<dataset_id>
+
+```json
+{
+  name: 'order_count',
+  format: ','
+}
+```
+
+`','` will format `123456` to `123,456`.
+
+Kepler.gl uses [`d3-format`](https://github.com/d3/d3-format) to format decimal. Check `d3-format` for the expression of the format. See Kepler.gl source code: [https://github.com/keplergl/kepler.gl/blob/v2.5.5/src/utils/data-utils.js#L365](https://github.com/keplergl/kepler.gl/blob/v2.5.5/src/utils/data-utils.js#L365)
+
 ## Examples
 
 * GeoJSON - https://kepler.gl/demo?mapUrl=https://gist.githubusercontent.com/xx7y7xx/2c26754503984878b5c8c184055a4e63/raw/44e5bac4110a45fdd5b6e3ee007a240bc7d8466a/kepler-gl-geojson.csv
