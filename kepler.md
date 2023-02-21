@@ -225,7 +225,7 @@ export const ALL_FIELD_TYPES = keyMirror({
 
 ## Tooltip
 
-path: keplerGl.<mapId>.visState.interactionConfig.tooltip.config.fieldsToShow.<dataset_id>
+path: `keplerGl.<mapId>.visState.interactionConfig.tooltip.config.fieldsToShow.<dataset_id>`
 
 ```json
 {
