@@ -238,6 +238,28 @@ path: `keplerGl.<mapId>.visState.interactionConfig.tooltip.config.fieldsToShow.<
 
 Kepler.gl uses [`d3-format`](https://github.com/d3/d3-format) to format decimal. Check `d3-format` for the expression of the format. See Kepler.gl source code: [https://github.com/keplergl/kepler.gl/blob/v2.5.5/src/utils/data-utils.js#L365](https://github.com/keplergl/kepler.gl/blob/v2.5.5/src/utils/data-utils.js#L365)
 
+## Actions
+
+### LAYER_VIS_CONFIG_CHANGE: layerVisConfigChange
+
+```js
+import * as actions from 'kepler.gl/actions';
+const dispatch = useDispatch();
+dispatch(
+  actions.layerVisConfigChange(
+    oldLayer,
+    /*newVisConfig:*/ {
+      colorRange: {
+        name: 'Uber Viz Diverging 0.5',
+        type: 'diverging',
+        category: 'Uber',
+        colors: ['#00939C', '#A2D4D7', '#EFBEAE', '#C22E00'],
+      },
+    },
+  ),
+);
+```
+
 ## Examples
 
 * GeoJSON - https://kepler.gl/demo?mapUrl=https://gist.githubusercontent.com/xx7y7xx/2c26754503984878b5c8c184055a4e63/raw/44e5bac4110a45fdd5b6e3ee007a240bc7d8466a/kepler-gl-geojson.csv
