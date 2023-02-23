@@ -245,6 +245,7 @@ Kepler.gl uses [`d3-format`](https://github.com/d3/d3-format) to format decimal.
 ```js
 import * as actions from 'kepler.gl/actions';
 const dispatch = useDispatch();
+const oldLayer = _.get(reduxRootState, `keplerGl.${mapId}.visState.layers`)[0];
 dispatch(
   actions.layerVisConfigChange(
     oldLayer,
@@ -256,6 +257,23 @@ dispatch(
         colors: ['#00939C', '#A2D4D7', '#EFBEAE', '#C22E00'],
       },
     },
+  ),
+);
+```
+
+### layerVisualChannelConfigChange
+
+```js
+dispatch(
+  actions.layerVisualChannelConfigChange(
+    oldLayer,
+    {
+      colorField: _.get(
+        reduxRootState,
+        `keplerGl.${mapId}.visState.datasets['${dataSetId}'].fields`,
+      )[0],
+    },
+    /*channel:*/ 'color',
   ),
 );
 ```
