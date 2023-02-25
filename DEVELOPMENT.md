@@ -96,7 +96,7 @@ So all the posts and pages should follow the kramdown syntax, or other Markdown 
 
 ### Syntax highlighting examples
 
-- [Github Pages markdown code block examples](http://xxd3vin.github.io/development/github-pages/github-pages-markdown-code-block-examples.html)
+- [Github Pages markdown code block examples](http://xx7y7xx.github.io/development/github-pages/github-pages-markdown-code-block-examples.html)
 
 ## Develop and preview
 

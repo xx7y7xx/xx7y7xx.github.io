@@ -7,7 +7,7 @@ title: Create SSC 3.0 API documents website
 
 基本思路是使用swagger-editor（Live demo）定义API，然后导出JSON，最后使用swagger-ui来讲JSON渲染成API文档网页。
 
-使用Github Project Pages来管理API文档的静态页。这样就可以通过[http://xxd3vin.github.io/swagger-ui](http://xxd3vin.github.io/swagger-ui)来访问API文档了。
+使用Github Project Pages来管理API文档的静态页。这样就可以通过[http://xx7y7xx.github.io/swagger-ui](http://xx7y7xx.github.io/swagger-ui)来访问API文档了。
 
 ## Steps
 
