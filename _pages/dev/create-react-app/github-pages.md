@@ -13,7 +13,7 @@ When your create-react-app project is ready.
 Add this line to `package.json`
 
 ```
-"homepage": "http://xxd3vin.github.io/antd-table-pagination-react-router",
+"homepage": "http://xx7y7xx.github.io/antd-table-pagination-react-router",
 ```
 
 ```

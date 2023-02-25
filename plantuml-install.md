@@ -13,7 +13,7 @@ $ brew install plantuml
 
 #### Install on Linux
 
-[Java](http://xxd3vin.github.io/java)
+[Java](http://xx7y7xx.github.io/java)
 
 [PlantUML](http://plantuml.com/download.html) > PlantUML compiled Jar
 
