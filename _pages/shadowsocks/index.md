@@ -96,7 +96,7 @@ sudo apt-get install shadowsocks-qt5
 ### Check server port
 
 - [http://tool.chinaz.com/port/](http://tool.chinaz.com/port/)
-- [http://port.ping.pe/](http://port.ping.pe/)
+- http://port.ping.pe/
 
 Ref: [https://www.bandwagonhost.net/1934.html](https://www.bandwagonhost.net/1934.html)
 

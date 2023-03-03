@@ -41,14 +41,14 @@ Create a `google-login.html` file with content below, and save to `/tmp/google-l
 </html>
 ```
 
-Open terminal, and change dir to `/tmp`. Run a small http server. (You should add [http://localhost:8000](http://localhost:8000) to Google APIs console first)
+Open terminal, and change dir to `/tmp`. Run a small http server. (You should add http://localhost:8000 to Google APIs console first)
 
 ```
 $ cd /tmp
 $ python -m SimpleHTTPServer
 ```
 
-Access [http://localhost:8000](http://localhost:8000) in Chrome. Open Chrome console (Command+Option+I), the log should be
+Access http://localhost:8000 in Chrome. Open Chrome console (Command+Option+I), the log should be
 
 ```
 ID: 1113951341069

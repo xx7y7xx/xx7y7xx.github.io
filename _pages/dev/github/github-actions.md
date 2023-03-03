@@ -6,7 +6,7 @@ permalink: /dev/github/github-actions.html
 
 ## Using env var in GitHub Actions
 
-Define `REACT_APP_GOOGLE_MAPS_API_KEY` with value `1@3$` in [Repo Settings -> Secrets -> New repository secret](https://github.com/photo-map/photo-map.github.io/settings/secrets/actions)
+Define `REACT_APP_GOOGLE_MAPS_API_KEY` with value `1@3$` in Repo Settings -> Secrets -> New repository secret: https://github.com/photo-map/photo-map.github.io/settings/secrets/actions
 
 `.github/workflows/save_env_var_to_file.yml`
 
