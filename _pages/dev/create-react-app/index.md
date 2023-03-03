@@ -71,7 +71,7 @@ quote_type = single
 
 ## Test
 
-Access [https://xxd3vin.github.io/antd-table-pagination-react-router/](https://xxd3vin.github.io/antd-table-pagination-react-router/)
+Access https://xxd3vin.github.io/antd-table-pagination-react-router/
 
 ## react-router and react-router-dom
 

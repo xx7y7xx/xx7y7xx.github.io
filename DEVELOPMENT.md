@@ -23,7 +23,7 @@ https://yyssc.github.io/gnuplog/css/main.css
 ## CI/CD
 
 This project uses Travis CI.
-The config file is [`.travis.yml`](https://github.com/xxd3vin/xxd3vin.github.io/blob/develop/.travis.yml)
+The config file is https://github.com/xxd3vin/xxd3vin.github.io/blob/develop/.travis.yml
 
 ### Build
 
