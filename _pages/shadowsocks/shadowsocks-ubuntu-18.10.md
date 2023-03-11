@@ -197,7 +197,7 @@ Traceback (most recent call last):
 AttributeError: /usr/lib/x86_64-linux-gnu/libcrypto.so.1.1: undefined symbol: EVP_CIPHER_CTX_cleanup
 ```
 
-according to [https://blog.csdn.net/blackfrog_unique/article/details/60320737](https://blog.csdn.net/blackfrog_unique/article/details/60320737), more details: [https://github.com/shadowsocks/shadowsocks/pull/947/files](https://github.com/shadowsocks/shadowsocks/pull/947/files)
+according to https://blog.csdn.net/blackfrog_unique/article/details/60320737 , more details: [https://github.com/shadowsocks/shadowsocks/pull/947/files](https://github.com/shadowsocks/shadowsocks/pull/947/files)
 
 try to change the source code of shadowsocks
 

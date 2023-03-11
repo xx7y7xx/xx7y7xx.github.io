@@ -18,7 +18,7 @@ CreateForm
             `-- Checkbox
 ```
 
-TODO demo [https://github.com/xxd3vin/antd-form-demos](https://github.com/xxd3vin/antd-form-demos)
+TODO demo [https://github.com/xx7y7xx/antd-form-demos](https://github.com/xx7y7xx/antd-form-demos)
 
 ## Select
 

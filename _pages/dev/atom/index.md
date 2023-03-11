@@ -23,7 +23,7 @@ Then input the filename, e.g. "atom.md", will open this file.
 
 ## config
 
-config example: [https://github.com/xxd3vin/env/blob/master/.atom/config.cson](https://github.com/xxd3vin/env/blob/master/.atom/config.cson)
+config example: [https://github.com/xx7y7xx/env/blob/master/.atom/config.cson](https://github.com/xx7y7xx/env/blob/master/.atom/config.cson)
 
 ### "Remove Trailing Whitespace" should not be on by default
 
@@ -59,7 +59,7 @@ Follow the instructions here: [privoxy](/privoxy.html)
 
 ### Config
 
-[https://github.com/xxd3vin/env/blob/master/.atom/config.cson](https://github.com/xxd3vin/env/blob/master/.atom/config.cson)
+[https://github.com/xx7y7xx/env/blob/master/.atom/config.cson](https://github.com/xx7y7xx/env/blob/master/.atom/config.cson)
 
 ```
 vim ~/.atom/config.cson

@@ -9,7 +9,7 @@ title: Mobx
 
 ## Examples
 
-- [https://github.com/xxd3vin/mobx-form-ajax-demo](https://github.com/xxd3vin/mobx-form-ajax-demo)
+- [https://github.com/xx7y7xx/mobx-form-ajax-demo](https://github.com/xx7y7xx/mobx-form-ajax-demo)
 
 ## feature
 
@@ -60,9 +60,9 @@ render() {
 
 - model中数据结构应该尽量和前端UI组件一致，而不是和服务器端获取的数据结构一致。
 
-比如[react-mobx-app](https://github.com/xxd3vin/react-mobx-app)这个例子。
+比如[react-mobx-app](https://github.com/xx7y7xx/react-mobx-app)这个例子。
 
 ## References
 
 - [Best Practices for building large scale maintainable projects](https://mobx.js.org/best/store.html)
-- A real world application [xxd3vin/react-mobx-app](https://github.com/xxd3vin/react-mobx-app)
+- A real world application [xxd3vin/react-mobx-app](https://github.com/xx7y7xx/react-mobx-app)

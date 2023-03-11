@@ -101,4 +101,4 @@ ln -s /usr/lib64/libOSMesa.so.8 /opt/google/chrome/libosmesa.so
 
 ## References
 
-- chrome-remote-interface examples [xxd3vin/chrome-remote-interface-examples](https://github.com/xxd3vin/chrome-remote-interface-examples)
+- chrome-remote-interface examples [xxd3vin/chrome-remote-interface-examples](https://github.com/xx7y7xx/chrome-remote-interface-examples)

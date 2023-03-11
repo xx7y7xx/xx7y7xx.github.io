@@ -158,7 +158,7 @@ from [https://github.com/airbnb/react-dates](https://github.com/airbnb/react-dat
 
 ## Boilerplate
 
-This boilerplate follow the rule of airbnb [https://github.com/xxd3vin/airbnb-npm-boilerplate](https://github.com/xxd3vin/airbnb-npm-boilerplate)
+This boilerplate follow the rule of airbnb [https://github.com/xx7y7xx/airbnb-npm-boilerplate](https://github.com/xx7y7xx/airbnb-npm-boilerplate)
 
 ## suggested packages
 

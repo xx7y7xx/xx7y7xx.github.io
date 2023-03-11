@@ -5,7 +5,7 @@ title: 'Rename dir with special chars in Git repo'
 
 After clone, the status is not correct.
 
-Ps: the original name of dir is `web - 副本`, but now the unicode is not right. (You could saw a snapshot of the special char at [here](https://github.com/xxd3vin/rsd_web/issues/1#issuecomment-256374916))
+Ps: the original name of dir is `web - 副本`, but now the unicode is not right. (You could saw a snapshot of the special char at [here](https://github.com/xx7y7xx/rsd_web/issues/1#issuecomment-256374916))
 
 ```
 $ git status
@@ -81,5 +81,5 @@ At last `git commit` and `git push`.
 
 ## References
 
-- [https://github.com/xxd3vin/rsd_web/issues/1](https://github.com/xxd3vin/rsd_web/issues/1)
+- [https://github.com/xx7y7xx/rsd_web/issues/1](https://github.com/xx7y7xx/rsd_web/issues/1)
 - [http://stackoverflow.com/questions/7811147/impossible-to-git-rm-with-special-caracters](http://stackoverflow.com/a/7811205/4685522)

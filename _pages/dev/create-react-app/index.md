@@ -79,7 +79,7 @@ Access https://xxd3vin.github.io/antd-table-pagination-react-router/
 yarn add react-router-dom
 ```
 
-[https://github.com/xxd3vin/antd-table-pagination-react-router/commit/54186065b0a35fe4fb77068a5f3a95829aae2337](https://github.com/xxd3vin/antd-table-pagination-react-router/commit/54186065b0a35fe4fb77068a5f3a95829aae2337)
+[https://github.com/xx7y7xx/antd-table-pagination-react-router/commit/54186065b0a35fe4fb77068a5f3a95829aae2337](https://github.com/xx7y7xx/antd-table-pagination-react-router/commit/54186065b0a35fe4fb77068a5f3a95829aae2337)
 
 ## antd
 

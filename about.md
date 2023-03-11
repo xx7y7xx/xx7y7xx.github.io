@@ -13,7 +13,7 @@ permalink: /about/
 ## Projects on Github
 
 - xxd3vin
-  - [xxd3vin/pano2vr_template](https://github.com/xxd3vin/pano2vr_template)
+  - [xxd3vin/pano2vr_template](https://github.com/xx7y7xx/pano2vr_template)
 - Yonyou
   - [yyssc/ssc-grid](https://github.com/yyssc/ssc-grid)
   - [yyssc/ssc-dev-server](https://github.com/yyssc/ssc-dev-server)

@@ -102,7 +102,7 @@ Disable all rules in current file:
 
 ## phantomjs
 
-example project [https://github.com/xxd3vin/login-take-snapshot](https://github.com/xxd3vin/login-take-snapshot)
+example project [https://github.com/xx7y7xx/login-take-snapshot](https://github.com/xx7y7xx/login-take-snapshot)
 
 ```json
 {

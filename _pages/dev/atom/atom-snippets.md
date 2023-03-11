@@ -30,4 +30,4 @@ Change the file `~/.atom/snippets.cson`
 
 ## See also
 
-- See examples [https://github.com/xxd3vin/env/blob/master/.atom/snippets.cson](https://github.com/xxd3vin/env/blob/master/.atom/snippets.cson)
+- See examples [https://github.com/xx7y7xx/env/blob/master/.atom/snippets.cson](https://github.com/xx7y7xx/env/blob/master/.atom/snippets.cson)
