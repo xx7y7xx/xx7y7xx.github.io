@@ -11,7 +11,7 @@ http://10.0.2.2:3000
 
 ## Android Projects
 
-- [https://github.com/xxd3vin/SimpleWebView](https://github.com/xxd3vin/SimpleWebView)
+- [https://github.com/xx7y7xx/SimpleWebView](https://github.com/xx7y7xx/SimpleWebView)
 
 ## Demo code
 

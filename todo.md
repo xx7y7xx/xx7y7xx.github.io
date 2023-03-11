@@ -155,7 +155,7 @@ http://stackoverflow.com/questions/14468659/jquery-mobile-document-ready-vs-page
 
 在github page 上维护一些js demo等。
 
-https://github.com/xxd3vin/workspace/tree/master/www/demo
+https://github.com/xx7y7xx/workspace/tree/master/www/demo
 
 ## 接受记忆力训练
 

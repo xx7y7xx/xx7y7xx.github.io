@@ -101,7 +101,7 @@ mkdir ~/.config/nvim/
 vim ~/.config/nvim/init.vim
 ```
 
-[https://github.com/xxd3vin/vimrc/blob/master/init.vim](https://github.com/xxd3vin/vimrc/blob/master/init.vim)
+[https://github.com/xx7y7xx/vimrc/blob/master/init.vim](https://github.com/xx7y7xx/vimrc/blob/master/init.vim)
 
 Cloase nvim and reopen again, run `:PlugInstall`
 

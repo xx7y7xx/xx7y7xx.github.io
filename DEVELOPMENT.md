@@ -23,7 +23,7 @@ https://yyssc.github.io/gnuplog/css/main.css
 ## CI/CD
 
 This project uses Travis CI.
-The config file is https://github.com/xxd3vin/xxd3vin.github.io/blob/develop/.travis.yml
+The config file is https://github.com/xx7y7xx/xxd3vin.github.io/blob/develop/.travis.yml
 
 ### Build
 
@@ -31,7 +31,7 @@ Run [`jgd`](https://github.com/yegor256/jekyll-github-deploy) to build the Markd
 
 ### Post Build
 
-Run [`_travis/test_pages_existence.sh`](https://github.com/xxd3vin/xxd3vin.github.io/blob/develop/_travis/test_pages_existence.sh) to check the MUST HAVE files like "index.html" or "sitemap.xml".
+Run [`_travis/test_pages_existence.sh`](https://github.com/xx7y7xx/xxd3vin.github.io/blob/develop/_travis/test_pages_existence.sh) to check the MUST HAVE files like "index.html" or "sitemap.xml".
 
 ## How to write a blog post
 

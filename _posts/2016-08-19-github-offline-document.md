@@ -38,4 +38,4 @@ python -m SimpleHTTPServer
 
 Access http://127.0.0.1:8000/readme.html
 
-At the end I create a offline document project https://github.com/xxd3vin/offline-documents
+At the end I create a offline document project https://github.com/xx7y7xx/offline-documents

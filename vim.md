@@ -73,9 +73,9 @@ inoremap <F2> <c-o>:w<cr>
 
 ### example
 
-[https://github.com/xxd3vin/env/tree/master/.vim/bundle](https://github.com/xxd3vin/env/tree/master/.vim/bundle)
+[https://github.com/xx7y7xx/env/tree/master/.vim/bundle](https://github.com/xx7y7xx/env/tree/master/.vim/bundle)
 
-[https://github.com/xxd3vin/env/blob/master/README.md#install-new-vim-plugin](https://github.com/xxd3vin/env/blob/master/README.md#install-new-vim-plugin)
+[https://github.com/xx7y7xx/env/blob/master/README.md#install-new-vim-plugin](https://github.com/xx7y7xx/env/blob/master/README.md#install-new-vim-plugin)
 
 ### suggest plugin list
 

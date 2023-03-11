@@ -33,7 +33,7 @@ return $parser->insertStripItem( $output, $parser->mStripState );
 
 ### 最后完成的代码
 
-[https://github.com/xxd3vin/mediawiki-ext/tree/master/jiandanurl](https://github.com/xxd3vin/mediawiki-ext/tree/master/jiandanurl)
+[https://github.com/xx7y7xx/mediawiki-ext/tree/master/jiandanurl](https://github.com/xx7y7xx/mediawiki-ext/tree/master/jiandanurl)
 
 ### 参考
 

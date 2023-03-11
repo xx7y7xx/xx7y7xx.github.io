@@ -34,7 +34,7 @@ title: Raspberry Pi Model B+
 参照：
 
 - [http://www.howtogeek.com/167425/how-to-setup-wi-fi-on-your-raspberry-pi-via-the-command-line/](http://www.howtogeek.com/167425/how-to-setup-wi-fi-on-your-raspberry-pi-via-the-command-line/)
-- id_str 是关键，请参照[http://www.electroschematics.com/9496/static-manual-ip-wireless-raspberry-pi/](http://www.electroschematics.com/9496/static-manual-ip-wireless-raspberry-pi/)
+- id_str 是关键，请参照 http://www.electroschematics.com/9496/static-manual-ip-wireless-raspberry-pi/
 - 关于 debian 的网络设置 [https://wiki.debian.org/NetworkConfiguration](https://wiki.debian.org/NetworkConfiguration)
 
 最终效果

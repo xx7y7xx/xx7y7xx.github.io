@@ -191,7 +191,7 @@ lcd.py:63: RuntimeWarning: This channel is already in use, continuing anyway.  U
 GPIO.cleanup()
 ```
 
-所以最终代码看起来应该是这样的：[https://github.com/xxd3vin/rpi/blob/master/lcd.py](https://github.com/xxd3vin/rpi/blob/master/lcd.py)
+所以最终代码看起来应该是这样的：[https://github.com/xx7y7xx/rpi/blob/master/lcd.py](https://github.com/xx7y7xx/rpi/blob/master/lcd.py)
 
 开始运行
 

@@ -46,7 +46,7 @@ same as ubuntu 16.04
 
 ## example projects
 
-- [https://github.com/xxd3vin/login-take-snapshot](https://github.com/xxd3vin/login-take-snapshot)
+- [https://github.com/xx7y7xx/login-take-snapshot](https://github.com/xx7y7xx/login-take-snapshot)
 
 ## See also
 

@@ -16,9 +16,9 @@ Source: [https://github.com/yyssc/ssc30-admin](https://github.com/yyssc/ssc30-ad
 
 ### ssc_web 脚手架
 
-Source: [https://github.com/xxd3vin/ssc_web-boilerplate](https://github.com/xxd3vin/ssc_web-boilerplate) (private)
+Source: [https://github.com/xx7y7xx/ssc_web-boilerplate](https://github.com/xx7y7xx/ssc_web-boilerplate) (private)
 
 ### Utils
 
 - Chrome extension
-  - Insert React component to a web page [https://github.com/xxd3vin/chrome-ext-insert-react-component](https://github.com/xxd3vin/chrome-ext-insert-react-component)
+  - Insert React component to a web page [https://github.com/xx7y7xx/chrome-ext-insert-react-component](https://github.com/xx7y7xx/chrome-ext-insert-react-component)

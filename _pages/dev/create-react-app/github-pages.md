@@ -22,7 +22,7 @@ mv build docs
 git commit -m 'Rebuild'
 ```
 
-Open https://github.com/xxd3vin/antd-table-pagination-react-router/settings
+Open https://github.com/xx7y7xx/antd-table-pagination-react-router/settings
 
 Change the "Source" section in Github Pages setting page, using "master branch /docs folder".
 

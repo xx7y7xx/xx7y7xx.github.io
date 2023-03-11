@@ -60,7 +60,7 @@ secure: "Ky/lA272zNC0..............................BtBEf9q+edjc="
 Pro Tip: You can add it automatically by running with --add.
 ```
 
-add `secure: ...` to `.travis.yml` config file. (An example .travis.yml config file: https://github.com/xxd3vin/xxd3vin.github.io/blob/develop/.travis.yml ,another example: https://github.com/xxd3vin/uui/blob/master/.travis.yml)
+add `secure: ...` to `.travis.yml` config file. (An example .travis.yml config file: https://github.com/xx7y7xx/xxd3vin.github.io/blob/develop/.travis.yml ,another example: https://github.com/xx7y7xx/uui/blob/master/.travis.yml)
 
 add `GH_TOKEN=a1b2c3d4e5f6` to [travis.org Environment Variables](https://travis-ci.org/yyssc/tims-ocr-api/settings)
 

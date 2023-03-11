@@ -5,7 +5,7 @@ title: Nuxt.js
 
 ## Examples
 
-[https://github.com/xxd3vin/nuxt-examples](https://github.com/xxd3vin/nuxt-examples)
+[https://github.com/xx7y7xx/nuxt-examples](https://github.com/xx7y7xx/nuxt-examples)
 
 ## Nuxt API application structure
 

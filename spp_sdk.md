@@ -6,7 +6,7 @@ title: SPP SDK
 ## 安装和配置
 
 ```
-git clone https://github.com/xxd3vin/spp-sdk.git D:\spp_sdk
+git clone https://github.com/xx7y7xx/spp-sdk.git D:\spp_sdk
 ```
 
 打开```D:\spp_sdk```文件夹，双击运行```register.bat```脚本。

@@ -19,4 +19,4 @@ title: Swagger
 
 ## Online demo
 
-- [https://xxd3vin.github.io/swagger-ui](https://xxd3vin.github.io/swagger-ui/?url=https://raw.githubusercontent.com/yyssc/ssc30-admin/master/src/swagger/swagger.yaml) (Github project for this demo: [https://github.com/xxd3vin/swagger-ui](https://github.com/xxd3vin/swagger-ui))
+- https://xxd3vin.github.io/swagger-ui/?url=https://raw.githubusercontent.com/yyssc/ssc30-admin/master/src/swagger/swagger.yaml (Github project for this demo: https://github.com/xx7y7xx/swagger-ui)

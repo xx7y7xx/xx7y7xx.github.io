@@ -49,7 +49,7 @@ mv id_rsa /tmp
 git add id_rsa.enc .travis.yml
 ```
 
-全部都配置好了之后是这样的：[xxd3vin.github.io/.travis.yml](https://github.com/xxd3vin/xxd3vin.github.io/blob/7a6f07b13048fec35b08d920ad374909ff61a725/.travis.yml#L21)
+全部都配置好了之后是这样的：[xxd3vin.github.io/.travis.yml](https://github.com/xx7y7xx/xxd3vin.github.io/blob/7a6f07b13048fec35b08d920ad374909ff61a725/.travis.yml#L21)
 
 参考：[http://www.cnblogs.com/zqzjs/p/6119750.html](http://www.cnblogs.com/zqzjs/p/6119750.html)
 
@@ -72,7 +72,7 @@ git subtree push --prefix dist origin gh-pages
 
 ## Deploy a React App to github page
 
-Let's take a example: [https://github.com/xxd3vin/antd-demos](https://github.com/xxd3vin/antd-demos)
+Let's take a example: [https://github.com/xx7y7xx/antd-demos](https://github.com/xx7y7xx/antd-demos)
 
 1. Create a new empty repo `antd-demos`
 2. First commit
@@ -131,9 +131,9 @@ To github.com:xxd3vin/antd-demos.git
  * [new branch]      develop -> develop
 ```
 
-4. Change default branch from `master` to `develop` [https://github.com/xxd3vin/antd-demos/settings/branches](https://github.com/xxd3vin/antd-demos/settings/branches)
+4. Change default branch from `master` to `develop` [https://github.com/xx7y7xx/antd-demos/settings/branches](https://github.com/xx7y7xx/antd-demos/settings/branches)
 
-5. Enable Github Pages. Select `master` branch as Source. [https://github.com/xxd3vin/antd-demos/settings](https://github.com/xxd3vin/antd-demos/settings)
+5. Enable Github Pages. Select `master` branch as Source. [https://github.com/xx7y7xx/antd-demos/settings](https://github.com/xx7y7xx/antd-demos/settings)
 
 6. Test our website [https://xxd3vin.github.io/antd-demos/](https://xxd3vin.github.io/antd-demos/)
 
