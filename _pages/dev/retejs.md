@@ -55,3 +55,42 @@ class InputControl extends Rete.Control {
   }
 }
 ```
+
+### How to rerender after data update
+
+To rerender control
+
+```js
+class InputControl extends Rete.Control {
+  static component = ({ value }) => <input value={value} />
+  handleChange(val) {
+    this.props.value = '123'; // pass value to react component
+    this.update(); // Call react to render this control only
+  }
+}
+// The implementation of control.update()
+// ```js
+// control.update = () => new Promise((res) => {
+//   render(<Component {...control.props} />, el, res)
+// });
+// ```
+```
+
+To rerender node
+
+```js
+export default class ConcatComponent extends Rete.Component {
+  builder(node) {
+    const handleChange = () => {
+      node.removeOutput(node.outputs.get(ctrKey)); // remove a output
+      node.update(); // Rerender ConcatComponent
+    }
+  }
+}
+// The implementation of node.update()
+// ```js
+// node.update = () => new Promise((res) => {
+//   render(<Component node={node} editor={editor} bindSocket={bindSocket} bindControl={bindControl} />, el, res)
+// });
+// ```
+```
