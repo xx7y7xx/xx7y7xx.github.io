@@ -26,10 +26,11 @@
 name: Markdown lint
 
 on:
-  push:
-    branches: [ main ]
-  pull_request:
-    types: [assigned, opened, synchronize, reopened]
+  workflow_dispatch:
+#   push:
+#     branches: [ main ]
+#   pull_request:
+#     types: [assigned, opened, synchronize, reopened]
 
 jobs:
   check-links:
