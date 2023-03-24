@@ -71,11 +71,12 @@ this.props.dispatch(fitBounds(bbox))
 
 ### Load new data and keep current map state
 
-https://github.com/uber-common/vis-academy/blob/kepler.gl/src/demos/kepler.gl/3-load-config/src/app.js
+#### solution 1 - getConfigToSave or save
 
-http://vis.academy/#/kepler.gl/3-load-config
-
-https://github.com/keplergl/kepler.gl/issues/176
+* https://github.com/keplergl/kepler.gl/blob/master/docs/api-reference/advanced-usages/saving-loading-w-schema.md#load-map
+* https://github.com/uber-common/vis-academy/blob/kepler.gl/src/demos/kepler.gl/3-load-config/src/app.js
+* http://vis.academy/#/kepler.gl/3-load-config
+* https://github.com/keplergl/kepler.gl/issues/176
 
 ```js
 class App extends React.Component {
@@ -88,7 +89,7 @@ class App extends React.Component {
     const { [this.props.id]: map } = keplerGl
 
     // create the config object
-    return KeplerGlSchema.getConfigToSave(map)
+    return KeplerGlSchema.KeplerGlSchema.getConfigToSave(map)
   }
   
   updateMap = () => {
@@ -116,6 +117,35 @@ class App extends React.Component {
     })
   }
 }
+```
+
+#### solution 2 - receiveMapConfig
+
+* `actions.receiveMapConfig` - https://docs.kepler.gl/docs/api-reference/actions/actions#receivemapconfig
+* https://github.com/keplergl/kepler.gl/issues/849
+
+code example, but not test:
+
+```
+import {receiveMapConfig} from 'kepler.gl/actions';
+import KeplerGlSchema from 'kepler.gl/schemas';
+
+const parsedConfig = KeplerGlSchema.parseSavedConfig(config);
+this.props.dispatch(receiveMapConfig(parsedConfig));
+```
+
+#### solution 3 - keepExistingConfig
+
+* https://github.com/keplergl/kepler.gl/blob/master/docs/api-reference/actions/actions.md#adddatatomap
+* https://github.com/keplergl/kepler.gl/issues/849
+
+code example:
+
+```js
+data.options.keepExistingConfig = true;
+// after enable `keepExistingConfig`, should remove config, otherwise we will have duplicated filters after calling `addDataToMap`
+delete data.config;
+addDataToMap(data);
 ```
 
 ## why kepler.gl lock to a specific deck.gl version?
