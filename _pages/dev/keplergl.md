@@ -276,6 +276,37 @@ Kepler.gl uses [`d3-format`](https://github.com/d3/d3-format) to format decimal.
 
 ## Actions
 
+### addDataToMap
+
+```js
+import * as actions from 'kepler.gl/actions';
+const dispatch = useDispatch();
+dispatch(
+  actions.addDataToMap({
+    datasets: [
+      {
+        info: { label: 'Test Data', id: 'test_data', },
+        data: [
+          ['foo', 1, 103]
+        ],
+      },
+    ],
+    options: {
+      /**
+       * When first init a map, will center map to all data
+       * When filter changed, then update map with centerMap=false
+       */
+      centerMap: false, // default is true in original kepler gl
+      readOnly: false,
+
+      // whether to keep exiting map data and associated layer filter interaction config default: false
+      // when enable this, then remove config below, otherwise will cause duplicate layers
+      keepExistingConfig: true,
+    },
+  }),
+);
+```
+
 ### LAYER_VIS_CONFIG_CHANGE: layerVisConfigChange
 
 ```js
