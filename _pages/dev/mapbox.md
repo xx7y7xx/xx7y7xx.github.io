@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Mapbox
+permalink: /dev/mapbox.html
 ---
 
 ## what is bearing
