@@ -40,3 +40,13 @@ map.on('load', () => {
 ## Mapbox expression playground
 
 * https://observablehq.com/@mourner/mapbox-gl-expression-playground
+
+## Debug
+
+### Show bbox of symbol layer
+
+Example: https://output.jsbin.com/qavizac
+
+```js
+window.mapbox.showCollisionBoxes = true;
+```
