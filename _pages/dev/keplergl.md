@@ -64,6 +64,119 @@ this.props.dispatch(
 );
 ```
 
+### GeoJSON polygon layer
+
+<!---
+move this large config to a kepler.gl example repo
+-->
+
+```js
+const mapConfig = {
+  version: 'v1',
+  config: {
+    visState: {
+      layers: [
+        {
+          id: 'polygon-layer-id',
+          type: 'geojson',
+          config: {
+            dataId: 'polygon-dataset-id',
+            label: 'A sample polygon layer',
+            // color is for fill color only
+            color: [255, 233, 188], // #ffe9bc
+            highlightColor: [0, 0, 255], // #0000ff
+            columns: {
+              geojson: '_geojson', // csv column for geojson
+            },
+            isVisible: false,
+            visConfig: {
+              /* stroke */
+              stroked: true,
+              strokeColor: [193, 86, 0], // #c15600
+              strokeOpacity: 0.8,
+              thickness: 2, // border line width
+              /* fill */
+              filled: true,
+              opacity: 0.1,
+              colorRange: {
+                // name: 'ColorBrewer YlGn-6',
+                // type: 'sequential',
+                // category: 'ColorBrewer',
+                colors: [
+                  '#ffffff',
+                  '#f5120a',
+                  '#fae900',
+                  '#95D195',
+                  '#438F45',
+                ],
+              },
+              strokeColorRange: {
+                // name: 'ColorBrewer YlGn-6',
+                // type: 'sequential',
+                // category: 'ColorBrewer',
+                colors: [
+                  '#ffffff',
+                  '#f5120a',
+                  '#fae900',
+                  '#95D195',
+                  '#438F45',
+                ],
+              },
+            },
+          },
+          visualChannels: {
+            /**
+             * fill color default value
+             * ```
+             * colorField: null,
+             * colorScale: 'quantile',
+             * ```
+             * use config.visConfig.colorRange to control the color range for fill color
+             */
+            colorField: {
+              name: 'student_count', // use this CSV column to indicate polygon fill color
+              type: 'real',
+            },
+            colorScale: 'quantize',
+
+            /**
+             * stroke color default value
+             * ```
+             * strokeColorField: null,
+             * strokeColorScale: 'quantile',
+             * ```
+             * use config.visConfig.strokeColorRange to control the color range for stroke color
+             */
+            strokeColorField: {
+              name: 'teacher_count', // use this CSV column to indicate the polygon border line color
+              type: 'integer',
+            },
+            strokeColorScale: 'quantize',
+
+            /**
+             * stroke width default value
+             * ```
+             * sizeField: null,
+             * sizeScale: 'linear',
+             * ```
+             */
+            // sizeField: {
+            //   name: 'rabbit_count',
+            //   type: 'integer',
+            // },
+            // sizeScale: 'quantize',
+            // heightField: null,
+            // heightScale: 'linear',
+            // radiusField: null,
+            // radiusScale: 'linear',
+          },
+        }
+      ],
+    },
+  },
+}
+```
+
 ## Map
 
 ### Zoom to a bbox
