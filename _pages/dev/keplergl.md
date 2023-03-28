@@ -68,11 +68,22 @@ this.props.dispatch(
 
 ### Zoom to a bbox
 
+solution 1
+
 ```js
-import * as turf from '@turf/turf'
-import { fitBounds } from 'kepler.gl/actions'
-const bbox = turf.bbox(turf.point([longitude, latitude])) // [103.785, 1.435, 103.785, 1.435]
-this.props.dispatch(fitBounds(bbox))
+import * as turf from '@turf/turf';
+import { fitBounds } from 'kepler.gl/actions';
+const bbox = turf.bbox(turf.point([longitude, latitude])); // [103.785, 1.435, 103.785, 1.435]
+this.props.dispatch(fitBounds(bbox));
+```
+
+solution 2: zoom to a position with zoom level
+
+```js
+import { fitBounds } from 'kepler.gl/actions';
+dispatch(
+  actions.updateMap({ latitude: 1, longitude: 103, zoom: 15 }),
+);
 ```
 
 ### Load new data and keep current map state
