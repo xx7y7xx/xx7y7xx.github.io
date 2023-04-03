@@ -452,7 +452,7 @@ dispatch(
 );
 ```
 
-### layerVisualChannelConfigChange
+### LAYER_VISUAL_CHANNEL_CHANGE: layerVisualChannelConfigChange
 
 ```js
 dispatch(
