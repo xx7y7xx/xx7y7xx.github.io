@@ -454,6 +454,9 @@ dispatch(
 
 ### LAYER_VISUAL_CHANNEL_CHANGE: layerVisualChannelConfigChange
 
+To change base color field to the first field.
+To change the color scale to `quantize`.
+
 ```js
 dispatch(
   actions.layerVisualChannelConfigChange(
@@ -462,7 +465,8 @@ dispatch(
       colorField: _.get(
         reduxRootState,
         `keplerGl.${mapId}.visState.datasets['${dataSetId}'].fields`,
-      )[0],
+      )[0], // `[0]` indicates the first field/column
+      colorScale: 'quantize',
     },
     /*channel:*/ 'color',
   ),
