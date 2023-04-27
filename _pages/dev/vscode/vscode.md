@@ -149,6 +149,44 @@ Set workspace settings: `.vscode/settings.json`
 
 Ctrl+P, then input filename to search, press enter to open selected file.
 
+## Error: Using `babel-preset-react-app` requires that you specify `NODE_ENV` or `BABEL_ENV` environment variables. Valid values are "development", "test", and "production". Instead, received: undefined.
+
+On the first line of a file in create-react-app project (already eject)
+
+```
+import React, { useEffect } from 'react';
+```
+
+The error is:
+
+```
+Parsing error: [BABEL] /Users/devin.chenyang/source/github.com/xx7y7xx/kepler.gl-examples/src/App.js: Using `babel-preset-react-app` requires that you specify `NODE_ENV` or `BABEL_ENV` environment variables. Valid values are "development", "test", and "production". Instead, received: undefined. (While processing: "/Users/devin.chenyang/source/github.com/xx7y7xx/kepler.gl-examples/node_modules/babel-preset-react-app/index.js") eslint
+```
+
+See the snapshot:
+
+![](/attachments/vscode_eslint_error_babel_env.png)
+
+Solution:
+
+Add this line to `package.json`
+
+```
+"parser": "@typescript-eslint/parser",
+```
+
+```json
+{
+  "eslintConfig": {
+    "parser": "@typescript-eslint/parser",
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  }
+}
+```
+
 ## See also
 
 - [VS Code x Go](/vscode-go.md)
