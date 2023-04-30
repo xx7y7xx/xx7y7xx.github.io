@@ -134,4 +134,4 @@ $ git commit -m 'first commit'
 $ git push --set-upstream origin gh-pages
 ```
 
-最终可以访问的地址[https://xxd3vin.github.io/swagger-ui/](https://xxd3vin.github.io/swagger-ui/)
+最终可以访问的地址 https://xxd3vin.github.io/swagger-ui/
