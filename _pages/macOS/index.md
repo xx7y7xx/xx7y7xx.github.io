@@ -10,6 +10,9 @@ title: macOS
 - `brew install md5sha1sum` ( could use `md5sum` command line tools )
 - https://www.intel.com/content/www/us/en/developer/articles/tool/power-gadget.html
 - https://github.com/Snipaste/feedback
+- disk
+  - Disk Inventory X - https://www.derlien.com/
+  - GrandPerspective - https://grandperspectiv.sourceforge.net/
 
 ## Setup
 
