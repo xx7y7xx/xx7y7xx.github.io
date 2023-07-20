@@ -45,6 +45,11 @@ Content-Length: 57
 {"I do not write it": "either"}
 ```
 
+## Generate table from ASCII
+
+* https://ozh.github.io/ascii-tables/
+
 ## Others
 
 - 从 youtube 上抓视频 - http://keepvid.com/
+
