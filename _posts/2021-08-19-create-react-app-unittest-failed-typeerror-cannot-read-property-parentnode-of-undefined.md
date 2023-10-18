@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'create-react-app unittest failed: "TypeError: Cannot read property \'parentNode\' of undefined"'
+title: "create-react-app unittest failed: \"TypeError: Cannot read property 'parentNode' of undefined\""
 ---
 
 In one of my create-react-app I saw this error message when running `yarn test`.
