@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "VS Code and JSDoc"
-permalink: /dev/vscode/index.html
+permalink: /dev/vscode/jsdoc.html
 ---
 
 ## Type Definitions
