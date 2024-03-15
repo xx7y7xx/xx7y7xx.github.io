@@ -106,6 +106,14 @@ $ rtl_tcp
 
 Run "Cocoa1090".
 
+## 公众对讲机（民用对讲机）：409-410MHZ
+
+Start gqrx.
+
+Mode change to "NFM" or "Narrow FM".
+
+Frequency change to 409MHz.
+
 ## References
 
 * https://osmocom.org/projects/rtl-sdr/wiki
