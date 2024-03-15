@@ -92,9 +92,11 @@ Beijing Radio Stations (https://zh.wikipedia.org/wiki/北京市广播电台列�
 
 ## Airplane (ADS-B)
 
-### "Dump1090 Mac Server" + ?
+### "Dump1090 Mac Server"(GUI) + ?
 
+* Download https://github.com/mxswd/dump1090-mac-app
 * Start "Dump1090 Mac Server"
+* ...
 
 ### "rtl_tcp" + "Cocoa1090"
 
