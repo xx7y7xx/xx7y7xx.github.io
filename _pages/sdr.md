@@ -124,7 +124,7 @@ Start gqrx.
 
 Mode change to "NFM" or "Narrow FM".
 
-Frequency change to 821.2375MHz.
+Frequency change to 821.2375MHz. (821.220MHz)
 
 ### Method 2
 
