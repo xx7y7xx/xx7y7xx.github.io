@@ -116,6 +116,35 @@ Mode change to "NFM" or "Narrow FM".
 
 Frequency change to 409MHz.
 
+## Track train POCSAG: 821.2375MHz
+
+### Method 1
+
+Start gqrx.
+
+Mode change to "NFM" or "Narrow FM".
+
+Frequency change to 821.2375MHz.
+
+### Method 2
+
+```sh
+$ brew tap dholm/homebrew-sdr
+```
+
+Error
+
+```
+$ brew install --HEAD dholm/sdr/multimon-ng
+Error: dholm/sdr/multimon-ng: Unsupported special dependency :x11
+```
+
+Cannot work.
+
+### Method 3
+
+Download sdrangel - https://github.com/f4exb/sdrangel/releases
+
 ## References
 
 * https://osmocom.org/projects/rtl-sdr/wiki
