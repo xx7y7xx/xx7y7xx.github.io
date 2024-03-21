@@ -145,7 +145,9 @@ Cannot work.
 
 ### Method 3
 
-Download sdrangel - https://github.com/f4exb/sdrangel/releases
+* Download sdrangel - https://github.com/f4exb/sdrangel/releases
+* From top navbar click "Add Rx device" icon.
+* Select "RTL-SDR[0] ..." from sampling device list.
 
 ## References
 
