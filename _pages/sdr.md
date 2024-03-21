@@ -53,9 +53,11 @@ $ python3 -m rtlsdr_scanner
 Listen to the radio
 
 ```sh
+$ brew install sox # install sox, then can call `play` from command line
 $ rtl_fm -f 90100000 -M wbfm -s 200000 -r 48000 - | play -r 48000 -t s16 -L -c 1  -
-# -f 90100000 (90,100,000 - FM 90.1MHz)
 ```
+params of rtl_fm:
+* `-f 90100000` 90,100,000 - FM 90.1MHz
 
 An example output is something like:
 
