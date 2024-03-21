@@ -126,7 +126,7 @@ Mode change to "NFM" or "Narrow FM".
 
 Frequency change to 821.2375MHz. (821.220MHz)
 
-### Method 2
+### Method 2 (not work)
 
 ```sh
 $ brew tap dholm/homebrew-sdr
