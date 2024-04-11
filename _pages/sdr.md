@@ -149,6 +149,12 @@ Cannot work.
 * From top navbar click "Add Rx device" icon.
 * Select "RTL-SDR[0] ..." from sampling device list.
 
+#### Update 2024-04-11
+
+Frequency is `821,217` kHz.
+
+On panel of "RTLSDR input plugin", increase "Gain" to `49.6`.
+
 ## References
 
 * https://osmocom.org/projects/rtl-sdr/wiki
