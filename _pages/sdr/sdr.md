@@ -1,5 +1,5 @@
 ---
-permalink: /sdr.html
+permalink: /sdr/sdr.html
 title: SDR (Software-defined radio)
 layout: page
 ---
@@ -148,6 +148,8 @@ Cannot work.
 * Download sdrangel - https://github.com/f4exb/sdrangel/releases
 * From top navbar click "Add Rx device" icon.
 * Select "RTL-SDR[0] ..." from sampling device list.
+
+![](sdrangel.png)
 
 #### Update 2024-04-11
 
