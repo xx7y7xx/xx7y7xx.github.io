@@ -55,4 +55,4 @@ Solution is moving `KEY` from `BaiduMap.jsx` to another `contants.js` file.
 
 ## See also
 
-- [https://github.com/xx7y7xx/js-api-tests](https://github.com/xx7y7xx/js-api-tests)
+- [https://github.com/xx7y7xx/examples/tree/main/nodejs/js-api-tests](https://github.com/xx7y7xx/examples/tree/main/nodejs/js-api-tests)
