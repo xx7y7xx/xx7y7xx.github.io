@@ -48,10 +48,11 @@ Frequency change to 409MHz.
 
 ## See also
 
-- 无线电工作手册 - 2.3 铁路专用通信系统 https://www.kancloud.cn/palwin/jianceshouce/284723 (https://docs.google.com/document/d/1RB6zF70guJFb0iqZ2l9Q8U390u6Ws1osJMCfxU-l1j0/edit)
+- [SDR Train Tracking](/sdr/sdr-train.html)
 
 ## References
 
+- 无线电工作手册 - 2.3 铁路专用通信系统 https://www.kancloud.cn/palwin/jianceshouce/284723 (https://docs.google.com/document/d/1RB6zF70guJFb0iqZ2l9Q8U390u6Ws1osJMCfxU-l1j0/edit)
 - https://osmocom.org/projects/rtl-sdr/wiki
 - gqrx
   - https://danielpocock.com/quickstart-sdr-ham-radio-gqrx-gnu-radio/
