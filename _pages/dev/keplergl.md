@@ -6,6 +6,13 @@ permalink: /dev/keplergl.html
 
 An example of Kepler map config JSON: https://github.com/uber-web/kepler.gl-data/blob/master/earthquakes/config.json
 
+## Pros vs Cons
+
+- Pros
+  - Simple integration with built-in components (e.g. SidePanel, Layer, Map)
+- Cons
+  - Not easy to customize
+
 ## Kepler builtin components
 
 ### SidePanel - SidePanelFactory
