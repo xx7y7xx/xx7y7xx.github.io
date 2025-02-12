@@ -23,9 +23,9 @@ By setting `readOnly` as `false`, we could show left side panel.
 ```js
 this.props.addDataToMap({
   options: {
-    readOnly: false
-  }
-})
+    readOnly: false,
+  },
+});
 ```
 
 ## Layers
@@ -33,14 +33,14 @@ this.props.addDataToMap({
 ### Arc layer colors base on value of another
 
 ```js
-const arcLayer = layers.find(layer => layer.type === 'arc')
+const arcLayer = layers.find((layer) => layer.type === "arc");
 this.props.layerVisualChannelConfigChange(arcLayer, {
   colorField: {
-    name: 'apple_size',
-    type: 'integer'
+    name: "apple_size",
+    type: "integer",
   },
-  colorScale: 'quantize'
-})
+  colorScale: "quantize",
+});
 ```
 
 ### Show H3 layer
@@ -70,23 +70,23 @@ this.props.dispatch(
 move this large config to a kepler.gl example repo
 -->
 
-```js
+````js
 const mapConfig = {
-  version: 'v1',
+  version: "v1",
   config: {
     visState: {
       layers: [
         {
-          id: 'polygon-layer-id',
-          type: 'geojson',
+          id: "polygon-layer-id",
+          type: "geojson",
           config: {
-            dataId: 'polygon-dataset-id',
-            label: 'A sample polygon layer',
+            dataId: "polygon-dataset-id",
+            label: "A sample polygon layer",
             // color is for fill color only
             color: [255, 233, 188], // #ffe9bc
             highlightColor: [0, 0, 255], // #0000ff
             columns: {
-              geojson: '_geojson', // csv column for geojson
+              geojson: "_geojson", // csv column for geojson
             },
             isVisible: false,
             visConfig: {
@@ -102,25 +102,13 @@ const mapConfig = {
                 // name: 'ColorBrewer YlGn-6',
                 // type: 'sequential',
                 // category: 'ColorBrewer',
-                colors: [
-                  '#ffffff',
-                  '#f5120a',
-                  '#fae900',
-                  '#95D195',
-                  '#438F45',
-                ],
+                colors: ["#ffffff", "#f5120a", "#fae900", "#95D195", "#438F45"],
               },
               strokeColorRange: {
                 // name: 'ColorBrewer YlGn-6',
                 // type: 'sequential',
                 // category: 'ColorBrewer',
-                colors: [
-                  '#ffffff',
-                  '#f5120a',
-                  '#fae900',
-                  '#95D195',
-                  '#438F45',
-                ],
+                colors: ["#ffffff", "#f5120a", "#fae900", "#95D195", "#438F45"],
               },
             },
           },
@@ -134,10 +122,10 @@ const mapConfig = {
              * use config.visConfig.colorRange to control the color range for fill color
              */
             colorField: {
-              name: 'student_count', // use this CSV column to indicate polygon fill color
-              type: 'real',
+              name: "student_count", // use this CSV column to indicate polygon fill color
+              type: "real",
             },
-            colorScale: 'quantize',
+            colorScale: "quantize",
 
             /**
              * stroke color default value
@@ -148,10 +136,10 @@ const mapConfig = {
              * use config.visConfig.strokeColorRange to control the color range for stroke color
              */
             strokeColorField: {
-              name: 'teacher_count', // use this CSV column to indicate the polygon border line color
-              type: 'integer',
+              name: "teacher_count", // use this CSV column to indicate the polygon border line color
+              type: "integer",
             },
-            strokeColorScale: 'quantize',
+            strokeColorScale: "quantize",
 
             /**
              * stroke width default value
@@ -170,12 +158,12 @@ const mapConfig = {
             // radiusField: null,
             // radiusScale: 'linear',
           },
-        }
+        },
       ],
     },
   },
-}
-```
+};
+````
 
 ## Map
 
@@ -184,8 +172,8 @@ const mapConfig = {
 solution 1
 
 ```js
-import * as turf from '@turf/turf';
-import { fitBounds } from 'kepler.gl/actions';
+import * as turf from "@turf/turf";
+import { fitBounds } from "kepler.gl/actions";
 const bbox = turf.bbox(turf.point([longitude, latitude])); // [103.785, 1.435, 103.785, 1.435]
 this.props.dispatch(fitBounds(bbox));
 ```
@@ -193,20 +181,18 @@ this.props.dispatch(fitBounds(bbox));
 solution 2: zoom to a position with zoom level
 
 ```js
-import { fitBounds } from 'kepler.gl/actions';
-dispatch(
-  actions.updateMap({ latitude: 1, longitude: 103, zoom: 15 }),
-);
+import { fitBounds } from "kepler.gl/actions";
+dispatch(actions.updateMap({ latitude: 1, longitude: 103, zoom: 15 }));
 ```
 
 ### Load new data and keep current map state
 
 #### solution 1 - getConfigToSave or save
 
-* https://github.com/keplergl/kepler.gl/blob/master/docs/api-reference/advanced-usages/saving-loading-w-schema.md#load-map
-* https://github.com/uber-common/vis-academy/blob/kepler.gl/src/demos/kepler.gl/3-load-config/src/app.js
-* http://vis.academy/#/kepler.gl/3-load-config
-* https://github.com/keplergl/kepler.gl/issues/176
+- https://github.com/keplergl/kepler.gl/blob/master/docs/api-reference/advanced-usages/saving-loading-w-schema.md#load-map
+- https://github.com/uber-common/vis-academy/blob/kepler.gl/src/demos/kepler.gl/3-load-config/src/app.js
+- http://vis.academy/#/kepler.gl/3-load-config
+- https://github.com/keplergl/kepler.gl/issues/176
 
 ```js
 class App extends React.Component {
@@ -214,45 +200,43 @@ class App extends React.Component {
   // Once exported the configuration can be imported using parseSavedConfig or load method from KeplerGlSchema
   getMapConfig = () => {
     // retrieve kepler.gl store
-    const { keplerGl } = this.props
+    const { keplerGl } = this.props;
     // retrieve current kepler.gl instance store
-    const { [this.props.id]: map } = keplerGl
+    const { [this.props.id]: map } = keplerGl;
 
     // create the config object
-    return KeplerGlSchema.KeplerGlSchema.getConfigToSave(map)
-  }
-  
+    return KeplerGlSchema.KeplerGlSchema.getConfigToSave(map);
+  };
+
   updateMap = () => {
     // read the current configuration
-    const config = this.getMapConfig() // config.version="v1", config.config.mapState={...}
-    
+    const config = this.getMapConfig(); // config.version="v1", config.config.mapState={...}
+
     this.props.addDataToMap({
       datasets: {
         info: {
-          label: 'Test Data',
-          id: 'test_data'
+          label: "Test Data",
+          id: "test_data",
         },
         data: {
-          fields: [
-            { name: 'id', format: '', type: 'string' }
-          ],
-          rows: [['123'], ['456']]
-        }
+          fields: [{ name: "id", format: "", type: "string" }],
+          rows: [["123"], ["456"]],
+        },
       },
       options: {
         centerMap: false, // Set to false, otherwise map to fitBounds (zoom to data bbox) automatically after data loaded.
-        readOnly: false
+        readOnly: false,
       },
-      config
-    })
-  }
+      config,
+    });
+  };
 }
 ```
 
 #### solution 2 - receiveMapConfig
 
-* `actions.receiveMapConfig` - https://docs.kepler.gl/docs/api-reference/actions/actions#receivemapconfig
-* https://github.com/keplergl/kepler.gl/issues/849
+- `actions.receiveMapConfig` - https://docs.kepler.gl/docs/api-reference/actions/actions#receivemapconfig
+- https://github.com/keplergl/kepler.gl/issues/849
 
 code example, but not test:
 
@@ -266,8 +250,8 @@ this.props.dispatch(receiveMapConfig(parsedConfig));
 
 #### solution 3 - keepExistingConfig
 
-* https://github.com/keplergl/kepler.gl/blob/master/docs/api-reference/actions/actions.md#adddatatomap
-* https://github.com/keplergl/kepler.gl/issues/849
+- https://github.com/keplergl/kepler.gl/blob/master/docs/api-reference/actions/actions.md#adddatatomap
+- https://github.com/keplergl/kepler.gl/issues/849
 
 code example:
 
@@ -289,12 +273,12 @@ https://kepler.gl/demo?mapUrl=https://gist.githubusercontent.com/xx7y7xx/50d7d88
 ## Add new filter
 
 ```js
-import { useDispatch } from 'react-redux'
-import * as actions from 'kepler.gl/actions'
-const dispatch = useDispatch()
-dispatch(actions.addFilter('data_id'))
-dispatch(actions.setFilter(4, 'name', 'column_name'))
-dispatch(actions.setFilter(4, 'value', ['foo', 'bar']))
+import { useDispatch } from "react-redux";
+import * as actions from "kepler.gl/actions";
+const dispatch = useDispatch();
+dispatch(actions.addFilter("data_id"));
+dispatch(actions.setFilter(4, "name", "column_name"));
+dispatch(actions.setFilter(4, "value", ["foo", "bar"]));
 ```
 
 ## Init a new project
@@ -327,20 +311,20 @@ Note: This is to fix react-redux conflict error: Uncaught Error: Could not find 
 
 ```json
 {
-  datasets: {},
-  config: {
-    visState: {
-      filters: [
+  "datasets": {},
+  "config": {
+    "visState": {
+      "filters": [
         {
-          id: 'students_count',
-          dataId: 'students_count',
-          name: 'Students Count',
-          type: 'range',
-          enlarged: false,
-          value: [0, 100],
+          "id": "students_count",
+          "dataId": "students_count",
+          "name": "Students Count",
+          "type": "range",
+          "enlarged": false,
+          "value": [0, 100]
         }
       ],
-      layers: []
+      "layers": []
     }
   }
 }
@@ -364,10 +348,10 @@ export const ALL_FIELD_TYPES = keyMirror({
 
 ```jsx
 <KeplerGl
-  getMapboxRef={mapRef => {
-    mapbox = mapRef?.getMap()
+  getMapboxRef={(mapRef) => {
+    mapbox = mapRef?.getMap();
     // List all mapbox layers in kepler.gl
-    console.log('All mapbox layers:', mapbox.getStyle().layers)
+    console.log("All mapbox layers:", mapbox.getStyle().layers);
   }}
 />
 ```
@@ -378,7 +362,7 @@ export const ALL_FIELD_TYPES = keyMirror({
 <KeplerGl
   onDeckInitialized={(deck /*Deck*/, gl /*WebGL2RenderingContext*/) => {
     // List all deck.gl layers in kepler.gl
-    console.log('All deck.gl layers', deck.layerManager.layers);
+    console.log("All deck.gl layers", deck.layerManager.layers);
   }}
 />
 ```
@@ -389,8 +373,8 @@ path: `keplerGl.<mapId>.visState.interactionConfig.tooltip.config.fieldsToShow.<
 
 ```json
 {
-  name: 'order_count',
-  format: ','
+  "name": "order_count",
+  "format": ","
 }
 ```
 
@@ -403,16 +387,14 @@ Kepler.gl uses [`d3-format`](https://github.com/d3/d3-format) to format decimal.
 ### addDataToMap
 
 ```js
-import * as actions from 'kepler.gl/actions';
+import * as actions from "kepler.gl/actions";
 const dispatch = useDispatch();
 dispatch(
   actions.addDataToMap({
     datasets: [
       {
-        info: { label: 'Test Data', id: 'test_data', },
-        data: [
-          ['foo', 1, 103]
-        ],
+        info: { label: "Test Data", id: "test_data" },
+        data: [["foo", 1, 103]],
       },
     ],
     options: {
@@ -427,14 +409,14 @@ dispatch(
       // when enable this, then remove config below, otherwise will cause duplicate layers
       keepExistingConfig: true,
     },
-  }),
+  })
 );
 ```
 
 ### LAYER_VIS_CONFIG_CHANGE: layerVisConfigChange
 
 ```js
-import * as actions from 'kepler.gl/actions';
+import * as actions from "kepler.gl/actions";
 const dispatch = useDispatch();
 const oldLayer = _.get(reduxRootState, `keplerGl.${mapId}.visState.layers`)[0];
 dispatch(
@@ -442,13 +424,13 @@ dispatch(
     oldLayer,
     /*newVisConfig:*/ {
       colorRange: {
-        name: 'Uber Viz Diverging 0.5',
-        type: 'diverging',
-        category: 'Uber',
-        colors: ['#00939C', '#A2D4D7', '#EFBEAE', '#C22E00'],
+        name: "Uber Viz Diverging 0.5",
+        type: "diverging",
+        category: "Uber",
+        colors: ["#00939C", "#A2D4D7", "#EFBEAE", "#C22E00"],
       },
-    },
-  ),
+    }
+  )
 );
 ```
 
@@ -464,15 +446,15 @@ dispatch(
     {
       colorField: _.get(
         reduxRootState,
-        `keplerGl.${mapId}.visState.datasets['${dataSetId}'].fields`,
+        `keplerGl.${mapId}.visState.datasets['${dataSetId}'].fields`
       )[0], // `[0]` indicates the first field/column
-      colorScale: 'quantize',
+      colorScale: "quantize",
     },
-    /*channel:*/ 'color',
-  ),
+    /*channel:*/ "color"
+  )
 );
 ```
 
 ## Examples
 
-* GeoJSON - https://kepler.gl/demo?mapUrl=https://gist.githubusercontent.com/xx7y7xx/2c26754503984878b5c8c184055a4e63/raw/44e5bac4110a45fdd5b6e3ee007a240bc7d8466a/kepler-gl-geojson.csv
+- GeoJSON - https://kepler.gl/demo?mapUrl=https://gist.githubusercontent.com/xx7y7xx/2c26754503984878b5c8c184055a4e63/raw/44e5bac4110a45fdd5b6e3ee007a240bc7d8466a/kepler-gl-geojson.csv
